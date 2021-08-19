@@ -1,0 +1,21 @@
+category	over_represented_pvalue	under_represented_pvalue	numDEInCat	numInCat	term	ontology	over_represented_FDR	under_represented_FDR	go_term
+GO:1901566	1	0.00163934731033208	0	211	organonitrogen compound biosynthetic process	BP	0.9999999999	0.9999999999	BP organonitrogen compound biosynthetic process
+GO:0044271	1	0.00187595443221797	0	208	cellular nitrogen compound biosynthetic process	BP	0.9999999999	0.9999999999	BP cellular nitrogen compound biosynthetic process
+GO:0090304	1	0.0107776564784266	0	182	nucleic acid metabolic process	BP	0.9999999999	0.9999999999	BP nucleic acid metabolic process
+GO:0009059	1	0.0110625197817695	0	163	macromolecule biosynthetic process	BP	0.9999999999	0.9999999999	BP macromolecule biosynthetic process
+GO:0003676	0.997182851858714	0.0140824566351946	2	289	nucleic acid binding	MF	0.9999999999	0.9999999999	MF nucleic acid binding
+GO:0034645	1	0.0144958629838083	0	151	cellular macromolecule biosynthetic process	BP	0.9999999999	0.9999999999	BP cellular macromolecule biosynthetic process
+GO:0044260	0.992232023243996	0.0215848044724965	6	483	cellular macromolecule metabolic process	BP	0.9999999999	0.9999999999	BP cellular macromolecule metabolic process
+GO:0043170	0.990825424786813	0.0238641234682646	7	523	macromolecule metabolic process	BP	0.9999999999	0.9999999999	BP macromolecule metabolic process
+GO:0034641	0.991450062983484	0.0249567284161524	5	423	cellular nitrogen compound metabolic process	BP	0.9999999999	0.9999999999	BP cellular nitrogen compound metabolic process
+GO:0043603	1	0.0255737235282878	0	129	cellular amide metabolic process	BP	0.9999999999	0.9999999999	BP cellular amide metabolic process
+GO:0016070	1	0.0340218850979505	0	143	RNA metabolic process	BP	0.9999999999	0.9999999999	BP RNA metabolic process
+GO:0005198	1	0.0341000426618745	0	115	structural molecule activity	MF	0.9999999999	0.9999999999	MF structural molecule activity
+GO:0043604	1	0.0344366630272002	0	116	amide biosynthetic process	BP	0.9999999999	0.9999999999	BP amide biosynthetic process
+GO:0006807	0.983384671859768	0.035658395466054	12	710	nitrogen compound metabolic process	BP	0.9999999999	0.9999999999	BP nitrogen compound metabolic process
+GO:0051641	1	0.0375607196157752	0	113	cellular localization	BP	0.9999999999	0.9999999999	BP cellular localization
+GO:0006518	1	0.0418108406982261	0	113	peptide metabolic process	BP	0.9999999999	0.9999999999	BP peptide metabolic process
+GO:0044267	0.987560054187665	0.0418706496898589	3	284	cellular protein metabolic process	BP	0.9999999999	0.9999999999	BP cellular protein metabolic process
+GO:0018130	1	0.0455948075297262	0	104	heterocycle biosynthetic process	BP	0.9999999999	0.9999999999	BP heterocycle biosynthetic process
+GO:0006412	1	0.0495727888279857	0	105	translation	BP	0.9999999999	0.9999999999	BP translation
+GO:0043043	1	0.0495727888279857	0	105	peptide biosynthetic process	BP	0.9999999999	0.9999999999	BP peptide biosynthetic process

@@ -1,0 +1,83 @@
+category	over_represented_pvalue	under_represented_pvalue	numDEInCat	numInCat	term	ontology	over_represented_FDR	go_term	gene_ids
+GO:0090305	8.20190637641705e-05	0.999997557730328	4	10	nucleic acid phosphodiester bond hydrolysis	BP	0.0519952740774305	BP nucleic acid phosphodiester bond hydrolysis	TRINITY_DN1416_c0_g1, TRINITY_DN1470_c0_g1, TRINITY_DN1474_c1_g1, TRINITY_DN1695_c0_g1
+GO:0001171	8.41075284332424e-05	0.999999428898417	3	4	reverse transcription	BP	0.0519952740774305	BP reverse transcription	TRINITY_DN1416_c0_g1, TRINITY_DN1470_c0_g1, TRINITY_DN1474_c1_g1
+GO:0003964	8.41075284332424e-05	0.999999428898417	3	4	RNA-directed DNA polymerase activity	MF	0.0519952740774305	MF RNA-directed DNA polymerase activity	TRINITY_DN1416_c0_g1, TRINITY_DN1470_c0_g1, TRINITY_DN1474_c1_g1
+GO:0009036	8.41075284332424e-05	0.999999428898417	3	4	type II site-specific deoxyribonuclease activity	MF	0.0519952740774305	MF type II site-specific deoxyribonuclease activity	TRINITY_DN1416_c0_g1, TRINITY_DN1470_c0_g1, TRINITY_DN1474_c1_g1
+GO:0015666	8.41075284332424e-05	0.999999428898417	3	4	restriction endodeoxyribonuclease activity	MF	0.0519952740774305	MF restriction endodeoxyribonuclease activity	TRINITY_DN1416_c0_g1, TRINITY_DN1470_c0_g1, TRINITY_DN1474_c1_g1
+GO:0016888	8.41075284332424e-05	0.999999428898417	3	4	endodeoxyribonuclease activity, producing 5'-phosphomonoesters	MF	0.0519952740774305	MF endodeoxyribonuclease activity, producing 5'-phosphomonoesters	TRINITY_DN1416_c0_g1, TRINITY_DN1470_c0_g1, TRINITY_DN1474_c1_g1
+GO:0016893	8.41075284332424e-05	0.999999428898417	3	4	endonuclease activity, active with either ribo- or deoxyribonucleic acids and producing 5'-phosphomonoesters	MF	0.0519952740774305	MF endonuclease activity, active with either ribo- or deoxyribonucleic acids and producing 5'-phosphomonoesters	TRINITY_DN1416_c0_g1, TRINITY_DN1470_c0_g1, TRINITY_DN1474_c1_g1
+GO:0032196	8.41075284332424e-05	0.999999428898417	3	4	transposition	BP	0.0519952740774305	BP transposition	TRINITY_DN1416_c0_g1, TRINITY_DN1470_c0_g1, TRINITY_DN1474_c1_g1
+GO:0032197	8.41075284332424e-05	0.999999428898417	3	4	transposition, RNA-mediated	BP	0.0519952740774305	BP transposition, RNA-mediated	TRINITY_DN1416_c0_g1, TRINITY_DN1470_c0_g1, TRINITY_DN1474_c1_g1
+GO:0032199	8.41075284332424e-05	0.999999428898417	3	4	reverse transcription involved in RNA-mediated transposition	BP	0.0519952740774305	BP reverse transcription involved in RNA-mediated transposition	TRINITY_DN1416_c0_g1, TRINITY_DN1470_c0_g1, TRINITY_DN1474_c1_g1
+GO:0004520	0.000191505929951094	0.999997466561996	3	5	endodeoxyribonuclease activity	MF	0.0885054016256181	MF endodeoxyribonuclease activity	TRINITY_DN1416_c0_g1, TRINITY_DN1470_c0_g1, TRINITY_DN1474_c1_g1
+GO:0004536	0.000191505929951094	0.999997466561996	3	5	deoxyribonuclease activity	MF	0.0885054016256181	MF deoxyribonuclease activity	TRINITY_DN1416_c0_g1, TRINITY_DN1470_c0_g1, TRINITY_DN1474_c1_g1
+GO:0034061	0.000192303199294272	0.99999745236568	3	5	DNA polymerase activity	MF	0.0885054016256181	MF DNA polymerase activity	TRINITY_DN1416_c0_g1, TRINITY_DN1470_c0_g1, TRINITY_DN1474_c1_g1
+GO:0006278	0.000200432808598941	0.999997306447454	3	5	RNA-dependent DNA biosynthetic process	BP	0.0885054016256181	BP RNA-dependent DNA biosynthetic process	TRINITY_DN1416_c0_g1, TRINITY_DN1470_c0_g1, TRINITY_DN1474_c1_g1
+GO:0015112	0.000667879337056908	1	2	2	nitrate transmembrane transporter activity	MF	0.258051878855363	MF nitrate transmembrane transporter activity	TRINITY_DN1022_c0_g1, TRINITY_DN315_c0_g1
+GO:0015706	0.000667879337056908	1	2	2	nitrate transport	BP	0.258051878855363	BP nitrate transport	TRINITY_DN1022_c0_g1, TRINITY_DN315_c0_g1
+GO:0004519	0.000924774328002809	0.999970437684917	3	8	endonuclease activity	MF	0.324023453475072	MF endonuclease activity	TRINITY_DN1416_c0_g1, TRINITY_DN1470_c0_g1, TRINITY_DN1474_c1_g1
+GO:0006310	0.000943452307109558	0.999969628439489	3	8	DNA recombination	BP	0.324023453475072	BP DNA recombination	TRINITY_DN1416_c0_g1, TRINITY_DN1470_c0_g1, TRINITY_DN1474_c1_g1
+GO:0071897	0.00101735842144388	0.99996637101545	3	8	DNA biosynthetic process	BP	0.331016303229794	BP DNA biosynthetic process	TRINITY_DN1416_c0_g1, TRINITY_DN1470_c0_g1, TRINITY_DN1474_c1_g1
+GO:0042126	0.00369422435841468	0.999938937596434	2	4	nitrate metabolic process	BP	0.9999999999	BP nitrate metabolic process	TRINITY_DN1022_c0_g1, TRINITY_DN315_c0_g1
+GO:0042128	0.00369422435841468	0.999938937596434	2	4	nitrate assimilation	BP	0.9999999999	BP nitrate assimilation	TRINITY_DN1022_c0_g1, TRINITY_DN315_c0_g1
+GO:0004518	0.00501122443587379	0.999658041277261	3	14	nuclease activity	MF	0.9999999999	MF nuclease activity	TRINITY_DN1416_c0_g1, TRINITY_DN1470_c0_g1, TRINITY_DN1474_c1_g1
+GO:2001057	0.00964686839480449	0.999669218043582	2	6	reactive nitrogen species metabolic process	BP	0.9999999999	BP reactive nitrogen species metabolic process	TRINITY_DN1022_c0_g1, TRINITY_DN315_c0_g1
+GO:0016779	0.0142767851874824	0.998493988302974	3	20	nucleotidyltransferase activity	MF	0.9999999999	MF nucleotidyltransferase activity	TRINITY_DN1416_c0_g1, TRINITY_DN1470_c0_g1, TRINITY_DN1474_c1_g1
+GO:0071941	0.0172865846496876	0.999117383776278	2	8	nitrogen cycle metabolic process	BP	0.9999999999	BP nitrogen cycle metabolic process	TRINITY_DN1022_c0_g1, TRINITY_DN315_c0_g1
+GO:0015103	0.0210765617268005	0.998770891218568	2	9	inorganic anion transmembrane transporter activity	MF	0.9999999999	MF inorganic anion transmembrane transporter activity	TRINITY_DN1022_c0_g1, TRINITY_DN315_c0_g1
+GO:0010309	0.0244333584567043	1	1	1	acireductone dioxygenase [iron(II)-requiring] activity	MF	0.9999999999	MF acireductone dioxygenase [iron(II)-requiring] activity	TRINITY_DN594_c0_g1
+GO:0003725	0.0245152827134357	1	1	1	double-stranded RNA binding	MF	0.9999999999	MF double-stranded RNA binding	TRINITY_DN1695_c0_g1
+GO:0010305	0.0245152827134357	1	1	1	leaf vascular tissue pattern formation	BP	0.9999999999	BP leaf vascular tissue pattern formation	TRINITY_DN1695_c0_g1
+GO:0010588	0.0245152827134357	1	1	1	cotyledon vascular tissue pattern formation	BP	0.9999999999	BP cotyledon vascular tissue pattern formation	TRINITY_DN1695_c0_g1
+GO:0033592	0.0245152827134357	1	1	1	RNA strand annealing activity	MF	0.9999999999	MF RNA strand annealing activity	TRINITY_DN1695_c0_g1
+GO:0034057	0.0245152827134357	1	1	1	RNA strand-exchange activity	MF	0.9999999999	MF RNA strand-exchange activity	TRINITY_DN1695_c0_g1
+GO:0043024	0.0245152827134357	1	1	1	ribosomal small subunit binding	MF	0.9999999999	MF ribosomal small subunit binding	TRINITY_DN1695_c0_g1
+GO:0080056	0.0245152827134357	1	1	1	petal vascular tissue pattern formation	BP	0.9999999999	BP petal vascular tissue pattern formation	TRINITY_DN1695_c0_g1
+GO:0080057	0.0245152827134357	1	1	1	sepal vascular tissue pattern formation	BP	0.9999999999	BP sepal vascular tissue pattern formation	TRINITY_DN1695_c0_g1
+GO:0097010	0.0245152827134357	1	1	1	eukaryotic translation initiation factor 4F complex assembly	BP	0.9999999999	BP eukaryotic translation initiation factor 4F complex assembly	TRINITY_DN1695_c0_g1
+GO:0097617	0.0245152827134357	1	1	1	annealing activity	MF	0.9999999999	MF annealing activity	TRINITY_DN1695_c0_g1
+GO:0042597	0.0245767304500099	1	1	1	periplasmic space	CC	0.9999999999	CC periplasmic space	TRINITY_DN523_c0_g1
+GO:0008836	0.0246381823202628	1	1	1	diaminopimelate decarboxylase activity	MF	0.9999999999	MF diaminopimelate decarboxylase activity	TRINITY_DN253_c0_g1
+GO:0004108	0.024761099321198	1	1	1	citrate (Si)-synthase activity	MF	0.9999999999	MF citrate (Si)-synthase activity	TRINITY_DN631_c0_g1
+GO:0036440	0.024761099321198	1	1	1	citrate synthase activity	MF	0.9999999999	MF citrate synthase activity	TRINITY_DN631_c0_g1
+GO:0003857	0.0249660043094714	1	1	1	3-hydroxyacyl-CoA dehydrogenase activity	MF	0.9999999999	MF 3-hydroxyacyl-CoA dehydrogenase activity	TRINITY_DN2366_c0_g1
+GO:0003985	0.0249660043094714	1	1	1	acetyl-CoA C-acetyltransferase activity	MF	0.9999999999	MF acetyl-CoA C-acetyltransferase activity	TRINITY_DN2366_c0_g1
+GO:0004300	0.0249660043094714	1	1	1	enoyl-CoA hydratase activity	MF	0.9999999999	MF enoyl-CoA hydratase activity	TRINITY_DN2366_c0_g1
+GO:0016453	0.0249660043094714	1	1	1	C-acetyltransferase activity	MF	0.9999999999	MF C-acetyltransferase activity	TRINITY_DN2366_c0_g1
+GO:0016507	0.0249660043094714	1	1	1	mitochondrial fatty acid beta-oxidation multienzyme complex	CC	0.9999999999	CC mitochondrial fatty acid beta-oxidation multienzyme complex	TRINITY_DN2366_c0_g1
+GO:0016509	0.0249660043094714	1	1	1	long-chain-3-hydroxyacyl-CoA dehydrogenase activity	MF	0.9999999999	MF long-chain-3-hydroxyacyl-CoA dehydrogenase activity	TRINITY_DN2366_c0_g1
+GO:0032048	0.0249660043094714	1	1	1	cardiolipin metabolic process	BP	0.9999999999	BP cardiolipin metabolic process	TRINITY_DN2366_c0_g1
+GO:0035965	0.0249660043094714	1	1	1	cardiolipin acyl-chain remodeling	BP	0.9999999999	BP cardiolipin acyl-chain remodeling	TRINITY_DN2366_c0_g1
+GO:0036125	0.0249660043094714	1	1	1	fatty acid beta-oxidation multienzyme complex	CC	0.9999999999	CC fatty acid beta-oxidation multienzyme complex	TRINITY_DN2366_c0_g1
+GO:0004638	0.0249864980343403	1	1	1	phosphoribosylaminoimidazole carboxylase activity	MF	0.9999999999	MF phosphoribosylaminoimidazole carboxylase activity	TRINITY_DN2023_c0_g1
+GO:0043727	0.0249864980343403	1	1	1	5-amino-4-imidazole carboxylate lyase activity	MF	0.9999999999	MF 5-amino-4-imidazole carboxylate lyase activity	TRINITY_DN2023_c0_g1
+GO:0031092	0.0250582309929712	1	1	1	platelet alpha granule membrane	CC	0.9999999999	CC platelet alpha granule membrane	TRINITY_DN1229_c0_g1
+GO:0009067	0.0259149643498073	0.998275948200848	2	10	aspartate family amino acid biosynthetic process	BP	0.9999999999	BP aspartate family amino acid biosynthetic process	TRINITY_DN253_c0_g1, TRINITY_DN594_c0_g1
+GO:0010167	0.0259507907036843	1	1	1	response to nitrate	BP	0.9999999999	BP response to nitrate	TRINITY_DN315_c0_g1
+GO:0071249	0.0259507907036843	1	1	1	cellular response to nitrate	BP	0.9999999999	BP cellular response to nitrate	TRINITY_DN315_c0_g1
+GO:1902170	0.0259507907036843	1	1	1	cellular response to reactive nitrogen species	BP	0.9999999999	BP cellular response to reactive nitrogen species	TRINITY_DN315_c0_g1
+GO:0015113	0.0262799940066575	1	1	1	nitrite transmembrane transporter activity	MF	0.9999999999	MF nitrite transmembrane transporter activity	TRINITY_DN1022_c0_g1
+GO:0015513	0.0262799940066575	1	1	1	high-affinity secondary active nitrite transmembrane transporter activity	MF	0.9999999999	MF high-affinity secondary active nitrite transmembrane transporter activity	TRINITY_DN1022_c0_g1
+GO:0015563	0.0262799940066575	1	1	1	NA	NA	0.9999999999	none	TRINITY_DN1022_c0_g1
+GO:0015707	0.0262799940066575	1	1	1	nitrite transport	BP	0.9999999999	BP nitrite transport	TRINITY_DN1022_c0_g1
+GO:0008186	0.026475751670039	1	1	1	RNA-dependent ATPase activity	MF	0.9999999999	MF RNA-dependent ATPase activity	TRINITY_DN1833_c0_g1
+GO:1990417	0.026475751670039	1	1	1	snoRNA release from pre-rRNA	BP	0.9999999999	BP snoRNA release from pre-rRNA	TRINITY_DN1833_c0_g1
+GO:0015698	0.0301867749848979	0.99778314873949	2	11	inorganic anion transport	BP	0.9999999999	BP inorganic anion transport	TRINITY_DN1022_c0_g1, TRINITY_DN315_c0_g1
+GO:0016831	0.0331377121592771	0.99744011946186	2	11	carboxy-lyase activity	MF	0.9999999999	MF carboxy-lyase activity	TRINITY_DN2023_c0_g1, TRINITY_DN253_c0_g1
+GO:0006820	0.0355193442830608	0.994514727993656	3	29	anion transport	BP	0.9999999999	BP anion transport	TRINITY_DN1022_c0_g1, TRINITY_DN1229_c0_g1, TRINITY_DN315_c0_g1
+GO:0006144	0.0488919703730471	0.999400371770611	1	2	purine nucleobase metabolic process	BP	0.9999999999	BP purine nucleobase metabolic process	TRINITY_DN2023_c0_g1
+GO:0006188	0.0488919703730471	0.999400371770611	1	2	IMP biosynthetic process	BP	0.9999999999	BP IMP biosynthetic process	TRINITY_DN2023_c0_g1
+GO:0006189	0.0488919703730471	0.999400371770611	1	2	'de novo' IMP biosynthetic process	BP	0.9999999999	BP 'de novo' IMP biosynthetic process	TRINITY_DN2023_c0_g1
+GO:0009113	0.0488919703730471	0.999400371770611	1	2	purine nucleobase biosynthetic process	BP	0.9999999999	BP purine nucleobase biosynthetic process	TRINITY_DN2023_c0_g1
+GO:0046040	0.0488919703730471	0.999400371770611	1	2	IMP metabolic process	BP	0.9999999999	BP IMP metabolic process	TRINITY_DN2023_c0_g1
+GO:0019509	0.0489520772869059	0.999398877358824	1	2	L-methionine salvage from methylthioadenosine	BP	0.9999999999	BP L-methionine salvage from methylthioadenosine	TRINITY_DN594_c0_g1
+GO:0043102	0.0489520772869059	0.999398877358824	1	2	amino acid salvage	BP	0.9999999999	BP amino acid salvage	TRINITY_DN594_c0_g1
+GO:0071267	0.0489520772869059	0.999398877358824	1	2	L-methionine salvage	BP	0.9999999999	BP L-methionine salvage	TRINITY_DN594_c0_g1
+GO:0000469	0.0495924947575372	0.999382836426271	1	2	cleavage involved in rRNA processing	BP	0.9999999999	BP cleavage involved in rRNA processing	TRINITY_DN1695_c0_g1
+GO:0000478	0.0495924947575372	0.999382836426271	1	2	endonucleolytic cleavage involved in rRNA processing	BP	0.9999999999	BP endonucleolytic cleavage involved in rRNA processing	TRINITY_DN1695_c0_g1
+GO:0090501	0.0495924947575372	0.999382836426271	1	2	RNA phosphodiester bond hydrolysis	BP	0.9999999999	BP RNA phosphodiester bond hydrolysis	TRINITY_DN1695_c0_g1
+GO:0090502	0.0495924947575372	0.999382836426271	1	2	RNA phosphodiester bond hydrolysis, endonucleolytic	BP	0.9999999999	BP RNA phosphodiester bond hydrolysis, endonucleolytic	TRINITY_DN1695_c0_g1
+GO:0046471	0.0498917209301708	0.999375267207518	1	2	phosphatidylglycerol metabolic process	BP	0.9999999999	BP phosphatidylglycerol metabolic process	TRINITY_DN2366_c0_g1
+GO:0002576	0.0499416130615109	0.999374000530938	1	2	platelet degranulation	BP	0.9999999999	BP platelet degranulation	TRINITY_DN1229_c0_g1
+GO:0003988	0.0499517755430902	0.999373742361342	1	2	acetyl-CoA C-acyltransferase activity	MF	0.9999999999	MF acetyl-CoA C-acyltransferase activity	TRINITY_DN2366_c0_g1
+GO:0010051	0.0499634997801698	0.999373444448739	1	2	xylem and phloem pattern formation	BP	0.9999999999	BP xylem and phloem pattern formation	TRINITY_DN1695_c0_g1

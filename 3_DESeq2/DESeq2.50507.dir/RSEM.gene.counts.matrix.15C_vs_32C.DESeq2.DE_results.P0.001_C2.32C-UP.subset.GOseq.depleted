@@ -1,0 +1,37 @@
+category	over_represented_pvalue	under_represented_pvalue	numDEInCat	numInCat	term	ontology	over_represented_FDR	under_represented_FDR	go_term
+GO:0016740	0.999593009357669	0.000845031591696547	19	3081	transferase activity	MF	0.9999999999	0.9999999999	MF transferase activity
+GO:0016192	0.998863547103813	0.00468717573757039	3	929	vesicle-mediated transport	BP	0.9999999999	0.9999999999	BP vesicle-mediated transport
+GO:0031224	0.995967437818711	0.00723010039766778	21	2974	intrinsic component of membrane	CC	0.9999999999	0.9999999999	CC intrinsic component of membrane
+GO:0019637	0.998115908299995	0.00738860119337055	3	868	organophosphate metabolic process	BP	0.9999999999	0.9999999999	BP organophosphate metabolic process
+GO:0009057	0.997733115921704	0.00759635972436236	4	1009	macromolecule catabolic process	BP	0.9999999999	0.9999999999	BP macromolecule catabolic process
+GO:0016021	0.995278703302433	0.00838884928963095	21	2944	integral component of membrane	CC	0.9999999999	0.9999999999	CC integral component of membrane
+GO:0009056	0.993810643415497	0.012029099265286	14	2086	catabolic process	BP	0.9999999999	0.9999999999	BP catabolic process
+GO:0044265	0.99664516262666	0.0123714956827368	3	816	cellular macromolecule catabolic process	BP	0.9999999999	0.9999999999	BP cellular macromolecule catabolic process
+GO:0051186	0.998126825725536	0.0137558492731377	1	507	cofactor metabolic process	BP	0.9999999999	0.9999999999	BP cofactor metabolic process
+GO:0016772	0.993398171003112	0.0151942306564642	8	1396	transferase activity, transferring phosphorus-containing groups	MF	0.9999999999	0.9999999999	MF transferase activity, transferring phosphorus-containing groups
+GO:1901565	0.995673965871584	0.0155030929756001	3	799	organonitrogen compound catabolic process	BP	0.9999999999	0.9999999999	BP organonitrogen compound catabolic process
+GO:0019787	0.997409009933114	0.0181702712853217	1	506	ubiquitin-like protein transferase activity	MF	0.9999999999	0.9999999999	MF ubiquitin-like protein transferase activity
+GO:0006796	0.989540559600074	0.0204187552611945	12	1812	phosphate-containing compound metabolic process	BP	0.9999999999	0.9999999999	BP phosphate-containing compound metabolic process
+GO:0004842	0.996953236660875	0.0208661728632035	1	493	ubiquitin-protein transferase activity	MF	0.9999999999	0.9999999999	MF ubiquitin-protein transferase activity
+GO:0006793	0.98893638762467	0.0210311549552596	13	1912	phosphorus metabolic process	BP	0.9999999999	0.9999999999	BP phosphorus metabolic process
+GO:0044433	0.993849810125676	0.0211511357968577	3	764	cytoplasmic vesicle part	CC	0.9999999999	0.9999999999	CC cytoplasmic vesicle part
+GO:0044456	1	0.0216548949933114	0	320	synapse part	CC	0.9999999999	0.9999999999	CC synapse part
+GO:0003824	0.983097346833783	0.0221233001880913	87	8840	catalytic activity	MF	0.9999999999	0.9999999999	MF catalytic activity
+GO:0016310	0.991504939299454	0.0226595128688349	5	1003	phosphorylation	BP	0.9999999999	0.9999999999	BP phosphorylation
+GO:0048193	1	0.0245113408655324	0	309	Golgi vesicle transport	BP	0.9999999999	0.9999999999	BP Golgi vesicle transport
+GO:1901135	0.992672375001157	0.0246738589298009	3	719	carbohydrate derivative metabolic process	BP	0.9999999999	0.9999999999	BP carbohydrate derivative metabolic process
+GO:0006511	0.994097455938393	0.0248779802098217	2	607	ubiquitin-dependent protein catabolic process	BP	0.9999999999	0.9999999999	BP ubiquitin-dependent protein catabolic process
+GO:0051603	0.992238971085878	0.0259466080829226	3	725	proteolysis involved in cellular protein catabolic process	BP	0.9999999999	0.9999999999	BP proteolysis involved in cellular protein catabolic process
+GO:0060627	1	0.0318231504714426	0	291	regulation of vesicle-mediated transport	BP	0.9999999999	0.9999999999	BP regulation of vesicle-mediated transport
+GO:0016301	0.985619402199625	0.0321824264579694	7	1176	kinase activity	MF	0.9999999999	0.9999999999	MF kinase activity
+GO:1901575	0.981395632996765	0.0339232215016227	13	1800	organic substance catabolic process	BP	0.9999999999	0.9999999999	BP organic substance catabolic process
+GO:0006508	0.985520752760419	0.0341167775401091	6	1059	proteolysis	BP	0.9999999999	0.9999999999	BP proteolysis
+GO:0016773	0.985299158366616	0.0345822576252679	6	1058	phosphotransferase activity, alcohol group as acceptor	MF	0.9999999999	0.9999999999	MF phosphotransferase activity, alcohol group as acceptor
+GO:0055086	0.990682586154725	0.0368476795463525	2	550	nucleobase-containing small molecule metabolic process	BP	0.9999999999	0.9999999999	BP nucleobase-containing small molecule metabolic process
+GO:1902531	0.99025618260801	0.0382747937227645	2	577	regulation of intracellular signal transduction	BP	0.9999999999	0.9999999999	BP regulation of intracellular signal transduction
+GO:0046483	0.975104889521979	0.0393897643356065	22	2662	heterocycle metabolic process	BP	0.9999999999	0.9999999999	BP heterocycle metabolic process
+GO:0044270	1	0.0402221188768354	0	269	cellular nitrogen compound catabolic process	BP	0.9999999999	0.9999999999	BP cellular nitrogen compound catabolic process
+GO:0046700	1	0.0416826272877522	0	266	heterocycle catabolic process	BP	0.9999999999	0.9999999999	BP heterocycle catabolic process
+GO:0098772	0.986353873711909	0.04240100001668	3	684	molecular function regulator	MF	0.9999999999	0.9999999999	MF molecular function regulator
+GO:0006732	0.991835588070077	0.047780898637984	1	386	coenzyme metabolic process	BP	0.9999999999	0.9999999999	BP coenzyme metabolic process
+GO:0008610	0.987317095532761	0.0479058098439496	2	536	lipid biosynthetic process	BP	0.9999999999	0.9999999999	BP lipid biosynthetic process

@@ -1,0 +1,36 @@
+#######
+#######
+# RSEM
+#######
+#######
+
+# Make Bowtie2 library
+bowtie2-build Holobiont_fasta Uri_Abdu_trinity
+rsem-prepare-reference Holobiont_fasta Uri_Abdu_trinity
+
+# Sample_A
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output A_ATCACG_L001_R1_001.fastq.gz,A_ATCACG_L001_R1_002.fastq.gz 15C_A
+15C_
+# Sample_B15C_
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output B_CGATGT_L001_R1_001.fastq.gz,B_CGATGT_L001_R1_002.fastq.gz 15C_B
+15C_
+# Sample_C15C_
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output C_TTAGGC_L001_R1_001.fastq.gz,C_TTAGGC_L001_R1_002.fastq.gz 15C_C
+
+# Sample_D
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output D_TGACCA_L001_R1_001.fastq.gz,D_TGACCA_L001_R1_002.fastq.gz 25C_D
+25C_
+# Sample_E25C_
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output E_ACAGTG_L001_R1_001.fastq.gz,E_ACAGTG_L001_R1_002.fastq.gz 25C_E
+25C_
+# Sample_F25C_
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output F_GCCAAT_L001_R1_001.fastq.gz,F_GCCAAT_L001_R1_002.fastq.gz 25C_F
+
+#Sample_J
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output G_CAGATC_L001_R1_001.fastq.gz,G_CAGATC_L001_R1_002.fastq.gz 32C_G
+32C_
+# Sample_H32C_
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output H_ACTTGA_L001_R1_001.fastq.gz,H_ACTTGA_L001_R1_002.fastq.gz 32C_H
+32C_
+# Sample_I32C_
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output I_GATCAG_L001_R1_001.fastq.gz,I_GATCAG_L001_R1_002.fastq.gz 32C_I

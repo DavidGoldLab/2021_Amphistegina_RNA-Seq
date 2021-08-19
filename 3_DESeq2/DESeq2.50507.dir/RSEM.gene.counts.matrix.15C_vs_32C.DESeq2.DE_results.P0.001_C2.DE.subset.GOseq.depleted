@@ -1,0 +1,74 @@
+category	over_represented_pvalue	under_represented_pvalue	numDEInCat	numInCat	term	ontology	over_represented_FDR	under_represented_FDR	go_term
+GO:0007186	0.999947892454878	0.000212238218080687	5	290	G protein-coupled receptor signaling pathway	BP	0.9999999999	0.9999999999	BP G protein-coupled receptor signaling pathway
+GO:0008484	0.999931138868495	0.000751603359662382	1	147	sulfuric ester hydrolase activity	MF	0.9999999999	0.9999999999	MF sulfuric ester hydrolase activity
+GO:0032147	1	0.000869248528970547	0	113	activation of protein kinase activity	BP	0.9999999999	0.9999999999	BP activation of protein kinase activity
+GO:0005085	0.999803235184623	0.000963822572979471	3	200	guanyl-nucleotide exchange factor activity	MF	0.9999999999	0.9999999999	MF guanyl-nucleotide exchange factor activity
+GO:0032271	0.999759233617542	0.00231567434444726	1	128	regulation of protein polymerization	BP	0.9999999999	0.9999999999	BP regulation of protein polymerization
+GO:0033674	0.999010144322513	0.00363125708390514	4	205	positive regulation of kinase activity	BP	0.9999999999	0.9999999999	BP positive regulation of kinase activity
+GO:0007187	0.999336681833934	0.00367630777869363	2	149	G protein-coupled receptor signaling pathway, coupled to cyclic nucleotide second messenger	BP	0.9999999999	0.9999999999	BP G protein-coupled receptor signaling pathway, coupled to cyclic nucleotide second messenger
+GO:0007188	0.999336681833934	0.00367630777869363	2	149	adenylate cyclase-modulating G protein-coupled receptor signaling pathway	BP	0.9999999999	0.9999999999	BP adenylate cyclase-modulating G protein-coupled receptor signaling pathway
+GO:0006022	1	0.00444114409188546	0	83	aminoglycan metabolic process	BP	0.9999999999	0.9999999999	BP aminoglycan metabolic process
+GO:0000003	1	0.00458352650338131	0	81	reproduction	BP	0.9999999999	0.9999999999	BP reproduction
+GO:0051056	0.999091998824576	0.00486777321977602	2	147	regulation of small GTPase mediated signal transduction	BP	0.9999999999	0.9999999999	BP regulation of small GTPase mediated signal transduction
+GO:0051347	0.998323425435412	0.0048890595882549	6	245	positive regulation of transferase activity	BP	0.9999999999	0.9999999999	BP positive regulation of transferase activity
+GO:0044462	0.999434995237185	0.00494580154069444	1	107	external encapsulating structure part	CC	0.9999999999	0.9999999999	CC external encapsulating structure part
+GO:0008361	0.998758638181968	0.00516071749152192	3	167	regulation of cell size	BP	0.9999999999	0.9999999999	BP regulation of cell size
+GO:0032535	0.998758638181968	0.00516071749152192	3	167	regulation of cellular component size	BP	0.9999999999	0.9999999999	BP regulation of cellular component size
+GO:1901136	0.999370887074862	0.00542550276727128	1	113	carbohydrate derivative catabolic process	BP	0.9999999999	0.9999999999	BP carbohydrate derivative catabolic process
+GO:0045860	0.998400616608953	0.00561875858843658	4	196	positive regulation of protein kinase activity	BP	0.9999999999	0.9999999999	BP positive regulation of protein kinase activity
+GO:0046578	0.998743737177822	0.00650341208375801	2	141	regulation of Ras protein signal transduction	BP	0.9999999999	0.9999999999	BP regulation of Ras protein signal transduction
+GO:0009279	0.999130669520187	0.00722066556829772	1	101	cell outer membrane	CC	0.9999999999	0.9999999999	CC cell outer membrane
+GO:1902905	1	0.00876194015011705	0	75	positive regulation of supramolecular fiber organization	BP	0.9999999999	0.9999999999	BP positive regulation of supramolecular fiber organization
+GO:1902903	0.997729812559033	0.0088736427087539	3	158	regulation of supramolecular fiber organization	BP	0.9999999999	0.9999999999	BP regulation of supramolecular fiber organization
+GO:0008360	1	0.00918010682128532	0	70	regulation of cell shape	BP	0.9999999999	0.9999999999	BP regulation of cell shape
+GO:0004553	0.997240559575962	0.00920785520025695	4	180	hydrolase activity, hydrolyzing O-glycosyl compounds	MF	0.9999999999	0.9999999999	MF hydrolase activity, hydrolyzing O-glycosyl compounds
+GO:0030203	1	0.0105073916739149	0	70	glycosaminoglycan metabolic process	BP	0.9999999999	0.9999999999	BP glycosaminoglycan metabolic process
+GO:0043327	0.998543474176666	0.0112803903985854	1	105	chemotaxis to cAMP	BP	0.9999999999	0.9999999999	BP chemotaxis to cAMP
+GO:0005834	0.997576539927664	0.0116420557335496	2	127	heterotrimeric G-protein complex	CC	0.9999999999	0.9999999999	CC heterotrimeric G-protein complex
+GO:1905360	0.997576539927664	0.0116420557335496	2	127	GTPase complex	CC	0.9999999999	0.9999999999	CC GTPase complex
+GO:0043235	1	0.0133709139534195	0	66	receptor complex	CC	0.9999999999	0.9999999999	CC receptor complex
+GO:0008643	1	0.0141279150276467	0	68	carbohydrate transport	BP	0.9999999999	0.9999999999	BP carbohydrate transport
+GO:0051445	1	0.0166997082099403	0	60	regulation of meiotic cell cycle	BP	0.9999999999	0.9999999999	BP regulation of meiotic cell cycle
+GO:0007167	0.996149216997735	0.0174767683143624	2	118	enzyme linked receptor protein signaling pathway	BP	0.9999999999	0.9999999999	BP enzyme linked receptor protein signaling pathway
+GO:0032273	1	0.0180674723028865	0	63	positive regulation of protein polymerization	BP	0.9999999999	0.9999999999	BP positive regulation of protein polymerization
+GO:0001664	0.994660967383738	0.0189672332794447	3	144	G protein-coupled receptor binding	MF	0.9999999999	0.9999999999	MF G protein-coupled receptor binding
+GO:0051338	0.989512944804969	0.0197576930622884	14	375	regulation of transferase activity	BP	0.9999999999	0.9999999999	BP regulation of transferase activity
+GO:0050764	1	0.0198004697592772	0	60	regulation of phagocytosis	BP	0.9999999999	0.9999999999	BP regulation of phagocytosis
+GO:0043549	0.990141059496035	0.0199964247187453	11	316	regulation of kinase activity	BP	0.9999999999	0.9999999999	BP regulation of kinase activity
+GO:0008064	0.997062975178402	0.0206473223014096	1	89	regulation of actin polymerization or depolymerization	BP	0.9999999999	0.9999999999	BP regulation of actin polymerization or depolymerization
+GO:0030832	0.997062975178402	0.0206473223014096	1	89	regulation of actin filament length	BP	0.9999999999	0.9999999999	BP regulation of actin filament length
+GO:0044550	1	0.0208934607924996	0	59	secondary metabolite biosynthetic process	BP	0.9999999999	0.9999999999	BP secondary metabolite biosynthetic process
+GO:0035023	1	0.0209371009618198	0	61	regulation of Rho protein signal transduction	BP	0.9999999999	0.9999999999	BP regulation of Rho protein signal transduction
+GO:0043627	1	0.0218521727836955	0	60	response to estrogen	BP	0.9999999999	0.9999999999	BP response to estrogen
+GO:0009555	1	0.0226709947434014	0	57	pollen development	BP	0.9999999999	0.9999999999	BP pollen development
+GO:0004065	0.99664503316836	0.0231158185054142	1	88	arylsulfatase activity	MF	0.9999999999	0.9999999999	MF arylsulfatase activity
+GO:0051494	0.996594714048491	0.0234394496524169	1	84	negative regulation of cytoskeleton organization	BP	0.9999999999	0.9999999999	BP negative regulation of cytoskeleton organization
+GO:0005088	0.996356474460525	0.0248070186885659	1	85	Ras guanyl-nucleotide exchange factor activity	MF	0.9999999999	0.9999999999	MF Ras guanyl-nucleotide exchange factor activity
+GO:0032465	1	0.0249552024321293	0	59	regulation of cytokinesis	BP	0.9999999999	0.9999999999	BP regulation of cytokinesis
+GO:0016798	0.989181104044611	0.0251976233958757	7	219	hydrolase activity, acting on glycosyl bonds	MF	0.9999999999	0.9999999999	MF hydrolase activity, acting on glycosyl bonds
+GO:0030833	0.996237262590558	0.0254891087955452	1	85	regulation of actin filament polymerization	BP	0.9999999999	0.9999999999	BP regulation of actin filament polymerization
+GO:0007010	0.983465741833183	0.0267486568149977	23	542	cytoskeleton organization	BP	0.9999999999	0.9999999999	BP cytoskeleton organization
+GO:0045859	0.984452166852828	0.0303503933273041	11	303	regulation of protein kinase activity	BP	0.9999999999	0.9999999999	BP regulation of protein kinase activity
+GO:0001894	1	0.0313038822436964	0	51	tissue homeostasis	BP	0.9999999999	0.9999999999	BP tissue homeostasis
+GO:0031683	0.989915013961828	0.0331368497705076	3	129	G-protein beta/gamma-subunit complex binding	MF	0.9999999999	0.9999999999	MF G-protein beta/gamma-subunit complex binding
+GO:0022604	0.986767523871665	0.034047562193684	5	178	regulation of cell morphogenesis	BP	0.9999999999	0.9999999999	BP regulation of cell morphogenesis
+GO:0055081	1	0.0342062071152516	0	51	anion homeostasis	BP	0.9999999999	0.9999999999	BP anion homeostasis
+GO:0051480	1	0.0344470218414972	0	54	regulation of cytosolic calcium ion concentration	BP	0.9999999999	0.9999999999	BP regulation of cytosolic calcium ion concentration
+GO:0031589	1	0.0350588935758057	0	51	cell-substrate adhesion	BP	0.9999999999	0.9999999999	BP cell-substrate adhesion
+GO:0098661	1	0.0368424475481566	0	48	inorganic anion transmembrane transport	BP	0.9999999999	0.9999999999	BP inorganic anion transmembrane transport
+GO:0038023	0.983438074281327	0.036934207648684	7	214	signaling receptor activity	MF	0.9999999999	0.9999999999	MF signaling receptor activity
+GO:0032956	0.985722186501309	0.039737560150575	4	146	regulation of actin cytoskeleton organization	BP	0.9999999999	0.9999999999	BP regulation of actin cytoskeleton organization
+GO:0043085	0.975572684329569	0.0400813044476026	19	449	positive regulation of catalytic activity	BP	0.9999999999	0.9999999999	BP positive regulation of catalytic activity
+GO:1902904	0.993541867886302	0.0401637753806732	1	75	negative regulation of supramolecular fiber organization	BP	0.9999999999	0.9999999999	BP negative regulation of supramolecular fiber organization
+GO:1901292	1	0.0407579834610719	0	49	nucleoside phosphate catabolic process	BP	0.9999999999	0.9999999999	BP nucleoside phosphate catabolic process
+GO:0030838	1	0.0410139598862135	0	50	positive regulation of actin filament polymerization	BP	0.9999999999	0.9999999999	BP positive regulation of actin filament polymerization
+GO:0050920	0.987083696488245	0.0410402685789434	3	129	regulation of chemotaxis	BP	0.9999999999	0.9999999999	BP regulation of chemotaxis
+GO:0005089	1	0.041452615792972	0	50	Rho guanyl-nucleotide exchange factor activity	MF	0.9999999999	0.9999999999	MF Rho guanyl-nucleotide exchange factor activity
+GO:0050766	1	0.04344964179837	0	46	positive regulation of phagocytosis	BP	0.9999999999	0.9999999999	BP positive regulation of phagocytosis
+GO:0007169	0.988664109070284	0.0443433939395422	2	98	transmembrane receptor protein tyrosine kinase signaling pathway	BP	0.9999999999	0.9999999999	BP transmembrane receptor protein tyrosine kinase signaling pathway
+GO:0045807	0.985864780182098	0.0443998294454328	3	123	positive regulation of endocytosis	BP	0.9999999999	0.9999999999	BP positive regulation of endocytosis
+GO:0004497	0.981737264308603	0.045304611263661	5	162	monooxygenase activity	MF	0.9999999999	0.9999999999	MF monooxygenase activity
+GO:0098739	1	0.0461632649752743	0	46	import across plasma membrane	BP	0.9999999999	0.9999999999	BP import across plasma membrane
+GO:0000226	0.974685330073335	0.0472970699619537	11	286	microtubule cytoskeleton organization	BP	0.9999999999	0.9999999999	BP microtubule cytoskeleton organization
+GO:0030587	0.991683088506764	0.0494402798973335	1	77	sorocarp development	BP	0.9999999999	0.9999999999	BP sorocarp development
+GO:0090702	0.991683088506764	0.0494402798973335	1	77	non-reproductive fruiting body development	BP	0.9999999999	0.9999999999	BP non-reproductive fruiting body development

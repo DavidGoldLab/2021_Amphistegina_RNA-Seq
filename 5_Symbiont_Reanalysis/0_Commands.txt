@@ -1,0 +1,234 @@
+############
+############
+# TRINOTATE
+############
+############
+
+#####################################################
+# Convert transcripts to proteins with TransDecoder
+#####################################################
+
+TransDecoder.LongOrfs -t ../0_Transcriptome_Analysis/Symbiont_Trinity.fasta
+TransDecoder.Predict -t ../0_Transcriptome_Analysis/Symbiont_Trinity.fasta
+
+###################################################
+# Perform BLAST searches against UNIPROT/SWISSPROT
+###################################################
+
+blastp -query Symbiont_Trinity.fasta.transdecoder.pep \
+-db uniprot_sprot.pep \
+-num_threads 8 -max_target_seqs 1 -outfmt 6 -evalue 1e-3 > Foram.blastp.outfmt6
+
+blastx -query ../0_Transcriptome_Analysis/Symbiont_Trinity.fasta \
+-db uniprot_sprot.pep \
+-num_threads 8 -max_target_seqs 1 -outfmt 6 -evalue 1e-3 > Foram.blastx.outfmt6
+
+##################
+# Perform HMMScan
+##################
+
+hmmscan --cpu 12 --domtblout PFAM.out Pfam-A.hmm \
+Symbiont_Trinity.fasta.transdecoder.pep > pfam.log
+
+##################
+# Perform RNAMMER
+##################
+
+~/Programs/Trinotate-Trinotate-v3.2.1/util/rnammer_support/RnammerTranscriptome.pl \
+--transcriptome ../0_Transcriptome_Analysis/Symbiont_Trinity.fasta \
+--path_to_rnammer ~/.linuxbrew/bin/rnammer
+
+##################
+# Perform SignalP
+##################
+
+signalp -f short -n signalp.out  \
+Symbiont_Trinity.fasta.transdecoder.pep
+
+###################################
+# Create Trinotate sqlite database
+###################################
+
+~/Programs/Trinotate-Trinotate-v3.2.1/admin/Build_Trinotate_Boilerplate_SQLite_db.pl  Trinotate_Symbiont
+
+###################
+# Load initial data
+###################
+
+~/Programs/Trinotate-Trinotate-v3.2.1/Trinotate Trinotate_Symbiont.sqlite init \
+--gene_trans_map Symbiont_Trinity.map \
+--transcript_fasta ../0_Transcriptome_Analysis/Symbiont_Trinity.fasta \
+--transdecoder_pep Symbiont_Trinity.fasta.transdecoder.pep
+
+########################################
+# Add additional data and output report
+########################################
+
+Trinotate Trinotate_Symbiont.sqlite LOAD_swissprot_blastp Foram.blastp.outfmt6
+Trinotate Trinotate_Symbiont.sqlite LOAD_pfam PFAM.out
+Trinotate Trinotate_Symbiont.sqlite LOAD_swissprot_blastx Foram.blastx.outfmt6
+Trinotate Trinotate_Symbiont.sqlite LOAD_signalp signalp.out
+Trinotate Trinotate_Symbiont.sqlite LOAD_rnammer Symbiont_Trinity.fasta.rnammer.gff
+Trinotate Trinotate_Symbiont.sqlite report > Symbiont.Trinotate.report.txt
+
+###################################
+# Extract rRNA hits for species ID
+###################################
+
+Samtools faidx ../0_Transcriptome_Analysis/Symbiont_Trinity.fasta \
+"TRINITY_DN1471_c1_g2_i1" \
+"TRINITY_DN1415_c0_g1_i1" \
+"TRINITY_DN1442_c0_g1_i1" \
+"TRINITY_DN1471_c1_g2_i2" \
+"TRINITY_DN1415_c0_g1_i2" \
+"TRINITY_DN1471_c1_g1_i4" \
+"TRINITY_DN1475_c1_g1_i1" \
+"TRINITY_DN1493_c0_g1_i1" \
+"TRINITY_DN1482_c0_g1_i1" \
+> rRNA_Hits.fasta
+
+rm ../0_Transcriptome_Analysis/Symbiont_Trinity.fasta.fai
+
+# remove intermediate files 
+
+mv Symbiont_Trinity.fasta ../Symbiont_Trinity.fasta
+rm *
+mv ../Symbiont_Trinity.fasta ./Symbiont_Trinity.fasta
+
+########################################
+########################################
+# Differential gene expression analysis
+########################################
+########################################
+
+#######
+# RSEM
+#######
+
+# Make Bowtie2 and RSEM libraries
+bowtie2-build ../0_Transcriptome_Analysis/Symbiont_Trinity.fasta Symbiont_Trinity
+rsem-prepare-reference ../0_Transcriptome_Analysis/Symbiont_Trinity.fasta Symbiont_Trinity
+
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output A_ATCACG_L001_R1_001.fastq.gz,A_ATCACG_L001_R1_002.fastq.gz Symbiont_Trinity 15C_A_Sym
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output B_CGATGT_L001_R1_001.fastq.gz,B_CGATGT_L001_R1_002.fastq.gz Symbiont_Trinity 15C_B_Sym
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output C_TTAGGC_L001_R1_001.fastq.gz,C_TTAGGC_L001_R1_002.fastq.gz Symbiont_Trinity 15C_C_Sym
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output D_TGACCA_L001_R1_001.fastq.gz,D_TGACCA_L001_R1_002.fastq.gz Symbiont_Trinity 25C_D_Sym
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output E_ACAGTG_L001_R1_001.fastq.gz,E_ACAGTG_L001_R1_002.fastq.gz Symbiont_Trinity 25C_E_Sym
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output F_GCCAAT_L001_R1_001.fastq.gz,F_GCCAAT_L001_R1_002.fastq.gz Symbiont_Trinity 25C_F_Sym
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output G_CAGATC_L001_R1_001.fastq.gz,G_CAGATC_L001_R1_002.fastq.gz Symbiont_Trinity 32C_G_Sym
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output H_ACTTGA_L001_R1_001.fastq.gz,H_ACTTGA_L001_R1_002.fastq.gz Symbiont_Trinity 32C_H_Sym
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output I_GATCAG_L001_R1_001.fastq.gz,I_GATCAG_L001_R1_002.fastq.gz Symbiont_Trinity 32C_I_Sym
+
+################################################
+# Build Transcript and Gene Expression Matrices
+################################################
+
+/usr/local/Cellar/trinity/2.11.0/libexec/util/abundance_estimates_to_matrix.pl \
+--est_method RSEM \
+--gene_trans_map ../0_Transcriptome_Analysis/Symbiont_Trinity.map \
+15C_A_Sym.isoforms.results \
+15C_B_Sym.isoforms.results \
+15C_C_Sym.isoforms.results \
+25C_D_Sym.isoforms.results \
+25C_E_Sym.isoforms.results \
+25C_F_Sym.isoforms.results \
+32C_G_Sym.isoforms.results \
+32C_H_Sym.isoforms.results \
+32C_I_Sym.isoforms.results
+
+# Create averaged matrix (for heat maps)
+
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/replicates_to_sample_averages_matrix.pl \
+--matrix RSEM.gene.TMM.EXPR.matrix \
+--samples_file samples_file.txt
+
+##############################################
+# Extract GO assignments per gene and lengths
+##############################################
+
+/Users/davidgold/Documents/bioinformatics/Trinotate-Trinotate-v3.2.0/util/extract_GO_assignments_from_Trinotate_xls.pl \
+--Trinotate_xls Symbiont.Trinotate.report.txt \
+-G --include_ancestral_terms \
+> go_annotations.txt
+
+# manually create 'Trinity.isoform_lengths.txt' from Trinity fasta file
+
+/usr/local/Cellar/trinity/2.11.0/libexec/util/misc/TPM_weighted_gene_length.py  \
+--gene_trans_map ../0_Transcriptome_Analysis/Symbiont_Trinity.map \
+--trans_lengths Trinity.isoform_lengths.txt \
+--TPM_matrix RSEM.isoform.TPM.not_cross_norm > Trinity.gene_lengths.txt
+
+###########################################
+# Running Differential Expression Analysis
+###########################################
+
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/run_DE_analysis.pl \
+--matrix RSEM.gene.counts.matrix \
+--method DESeq2 \
+--samples_file samples_file.txt
+
+cd DESeq2.55146.dir
+
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/analyze_diff_expr.pl \
+--matrix ../RSEM.gene.TMM.EXPR.matrix \
+--samples ../samples_file.txt \
+--examine_GO_enrichment --GO_annots ../go_annotations.txt --gene_lengths ../Trinity.gene_lengths.txt
+
+# Identify genes with p-value < 0.05 (less stringent for downstream analyses)
+
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/analyze_diff_expr.pl \
+--matrix ../RSEM.gene.TMM.EXPR.matrix \
+--samples ../samples_file.txt -P 0.05
+
+###############
+# Generate PCA
+###############
+
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/PtR \
+--matrix ../RSEM.gene.counts.matrix \
+-s ../samples_file.txt --min_rowSums 10 --log2 \
+--CPM --center_rows \
+--prin_comp 2
+
+
+
+
+
+
+
+##############################################
+# Extract GO assignments per gene and lengths
+##############################################
+
+/Users/davidgold/Documents/bioinformatics/Trinotate-Trinotate-v3.2.0/util/extract_GO_assignments_from_Trinotate_xls.pl \
+--Trinotate_xls Symbiont.Trinotate.report.txt \
+-G --include_ancestral_terms \
+> go_annotations.txt
+
+# manually create 'Trinity.isoform_lengths.txt' from Trinity fasta file
+
+/usr/local/Cellar/trinity/2.11.0/libexec/util/misc/TPM_weighted_gene_length.py  \
+--gene_trans_map ../0_Transcriptome_Analysis/Symbiont_Trinity.map \
+--trans_lengths Trinity.isoform_lengths.txt \
+--TPM_matrix RSEM.isoform.TPM.not_cross_norm > Trinity.gene_lengths.txt
+
+######################
+# GoSeq: All DE Genes
+######################
+
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/run_GOseq.pl \
+--genes_single_factor  ./DESeq2.8203.dir/diffExpr.P0.001_C2.matrix \
+--GO_assignments go_annotations.txt \
+--lengths Trinity.gene_lengths.txt \
+--background  GoSeq_List.All.txt
+
+###################################################
+# Create Heat Map for Enriched genes in GO:0009765
+###################################################
+
+cd DESeq2.8203.dir    
+join <(sort ../RSEM.gene.TMM.EXPR.matrix) <(sort GO-0009765_List.txt) > GO-0009765_List.gene.counts.matrix
+
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/PtR \
+--matrix GO-0009765_List.gene.counts.matrix \
+--heatmap --center_rows --log2

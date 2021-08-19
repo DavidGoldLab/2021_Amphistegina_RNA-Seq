@@ -1,0 +1,80 @@
+############
+############
+# TRINOTATE
+############
+############
+
+#####################################################
+# Convert transcripts to proteins with TransDecoder
+#####################################################
+
+TransDecoder.LongOrfs -t ../0_Transcriptome_Analysis/Holobiont_Trinity.fasta
+TransDecoder.Predict -t ../0_Transcriptome_Analysis/Holobiont_Trinity.fasta
+
+###################################################
+# Perform BLAST searches against UNIPROT/SWISSPROT
+###################################################
+
+blastp -query Holobiont_Trinity.fasta.transdecoder.pep \
+-db uniprot_sprot.pep \
+-num_threads 8 -max_target_seqs 1 -outfmt 6 -evalue 1e-3 > blastp.outfmt6
+
+blastx -query Holobiont_Trinity.fasta.transdecoder.pep \
+-db uniprot_sprot.pep \
+-num_threads 8 -max_target_seqs 1 -outfmt 6 -evalue 1e-3 > blastx.outfmt6
+
+##################
+# Perform HMMScan
+##################
+
+hmmscan --cpu 12 --domtblout PFAM.out Pfam-A.hmm \
+Holobiont_Trinity.fasta.transdecoder.pep > pfam.log
+
+##################
+# Perform RNAMMER
+##################
+
+~/Programs/Trinotate-Trinotate-v3.2.1/util/rnammer_support/RnammerTranscriptome.pl \
+--transcriptome ../Holobiont_Trinity.fasta \
+--path_to_rnammer ~/.linuxbrew/bin/rnammer
+
+##################
+# Perform SignalP
+##################
+
+signalp -f short -n signalp.out  \
+Holobiont_Trinity.fasta.transdecoder.pep
+
+###################################
+# Create Trinotate sqlite database
+###################################
+
+~/Programs/Trinotate-Trinotate-v3.2.1/admin/Build_Trinotate_Boilerplate_SQLite_db.pl  Trinotate_Holobiont
+
+###################
+# Load initial data
+###################
+
+~/Programs/Trinotate-Trinotate-v3.2.1/Trinotate Trinotate_Symbiont.sqlite init \
+--gene_trans_map ../0_Transcriptome_Analysis/Holobiont_Trinity.map \
+--transcript_fasta ../0_Transcriptome_Analysis/Holobiont_Trinity.fasta \
+--transdecoder_pep Holobiont_Trinity.fasta.transdecoder.pep
+
+########################################
+# Add additional data and output report
+########################################
+
+Trinotate Trinotate_Holobiont.sqlite LOAD_swissprot_blastp blastp.outfmt6
+Trinotate Trinotate_Holobiont.sqlite LOAD_pfam PFAM.out
+Trinotate Trinotate_Holobiont.sqlite LOAD_swissprot_blastx blastx.outfmt6
+Trinotate Trinotate_Holobiont.sqlite LOAD_signalp signalp.out
+Trinotate Trinotate_Holobiont.sqlite LOAD_rnammer Trinity.fasta.rnammer.gff
+Trinotate Trinotate_Holobiont.sqlite report > Trinotate.Holobiont.report.txt
+
+##########################
+# Remove intermediate data
+##########################
+
+mv Trinotate.Holobiont.report.txt ../Trinotate.Holobiont.report.txt
+rm *
+mv ../Trinotate.Holobiont.report.txt ./

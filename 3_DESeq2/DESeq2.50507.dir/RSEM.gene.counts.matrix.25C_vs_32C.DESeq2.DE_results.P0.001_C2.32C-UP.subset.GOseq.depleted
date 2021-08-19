@@ -1,0 +1,90 @@
+category	over_represented_pvalue	under_represented_pvalue	numDEInCat	numInCat	term	ontology	over_represented_FDR	under_represented_FDR	go_term
+GO:0007165	0.99999971205965	1.75179865018459e-06	4	1785	signal transduction	BP	0.9999999999	0.029752548274735	BP signal transduction
+GO:0051234	0.999875705018273	0.000288575859742765	16	2738	establishment of localization	BP	0.9999999999	0.9999999999	BP establishment of localization
+GO:0051179	0.999869698681727	0.000290061215304419	18	2956	localization	BP	0.9999999999	0.9999999999	BP localization
+GO:0006810	0.999802540921428	0.000448550065158733	16	2685	transport	BP	0.9999999999	0.9999999999	BP transport
+GO:0035556	0.999920236650728	0.000527672878736764	2	938	intracellular signal transduction	BP	0.9999999999	0.9999999999	BP intracellular signal transduction
+GO:0044431	1	0.000949456991077913	0	548	Golgi apparatus part	CC	0.9999999999	0.9999999999	CC Golgi apparatus part
+GO:0043412	0.998875717837055	0.00233540422848044	16	2420	macromolecule modification	BP	0.9999999999	0.9999999999	BP macromolecule modification
+GO:0010646	0.999151730958395	0.00310913822053999	4	1059	regulation of cell communication	BP	0.9999999999	0.9999999999	BP regulation of cell communication
+GO:0051049	0.999649240606496	0.00317269331993431	1	621	regulation of transport	BP	0.9999999999	0.9999999999	BP regulation of transport
+GO:0044425	0.998135176064384	0.00319252696960349	30	3777	membrane part	CC	0.9999999999	0.9999999999	CC membrane part
+GO:0048519	0.99865458105282	0.00323114320342361	10	1773	negative regulation of biological process	BP	0.9999999999	0.9999999999	BP negative regulation of biological process
+GO:0071702	0.998448146937413	0.00383491899276646	9	1602	organic substance transport	BP	0.9999999999	0.9999999999	BP organic substance transport
+GO:0033036	0.998585776961247	0.00387643913982753	7	1355	macromolecule localization	BP	0.9999999999	0.9999999999	BP macromolecule localization
+GO:0006464	0.998111256503296	0.00388361101019406	15	2253	cellular protein modification process	BP	0.9999999999	0.9999999999	BP cellular protein modification process
+GO:0036211	0.998111256503296	0.00388361101019406	15	2253	protein modification process	BP	0.9999999999	0.9999999999	BP protein modification process
+GO:0023051	0.998891892166241	0.00396759028363432	4	1035	regulation of signaling	BP	0.9999999999	0.9999999999	BP regulation of signaling
+GO:0001882	0.998959626562449	0.00433080133393981	3	795	nucleoside binding	MF	0.9999999999	0.9999999999	MF nucleoside binding
+GO:0019001	0.998958942272178	0.004333316684134	3	797	guanyl nucleotide binding	MF	0.9999999999	0.9999999999	MF guanyl nucleotide binding
+GO:0032561	0.998958942272178	0.004333316684134	3	797	guanyl ribonucleotide binding	MF	0.9999999999	0.9999999999	MF guanyl ribonucleotide binding
+GO:0003924	0.99915177434537	0.00450454933461756	2	666	GTPase activity	MF	0.9999999999	0.9999999999	MF GTPase activity
+GO:0032549	0.998890164245044	0.00459127158954362	3	789	ribonucleoside binding	MF	0.9999999999	0.9999999999	MF ribonucleoside binding
+GO:0008104	0.998295778810621	0.00460490975211837	7	1334	protein localization	BP	0.9999999999	0.9999999999	BP protein localization
+GO:0016192	0.99880392730015	0.00490989416698913	3	858	vesicle-mediated transport	BP	0.9999999999	0.9999999999	BP vesicle-mediated transport
+GO:0001883	0.998779321676445	0.00500330113085214	3	780	purine nucleoside binding	MF	0.9999999999	0.9999999999	MF purine nucleoside binding
+GO:0032550	0.998729529240553	0.00518700941111354	3	777	purine ribonucleoside binding	MF	0.9999999999	0.9999999999	MF purine ribonucleoside binding
+GO:0005525	0.998674858977189	0.00538783056935975	3	773	GTP binding	MF	0.9999999999	0.9999999999	MF GTP binding
+GO:0034470	1	0.00615239251965456	0	387	ncRNA processing	BP	0.9999999999	0.9999999999	BP ncRNA processing
+GO:0018193	0.999208016841334	0.00650753656180818	1	573	peptidyl-amino acid modification	BP	0.9999999999	0.9999999999	BP peptidyl-amino acid modification
+GO:0048523	0.996951597147211	0.00717052299400274	9	1551	negative regulation of cellular process	BP	0.9999999999	0.9999999999	BP negative regulation of cellular process
+GO:0031224	0.995946019700865	0.00726654945481255	21	2772	intrinsic component of membrane	CC	0.9999999999	0.9999999999	CC intrinsic component of membrane
+GO:1901564	0.994853703412431	0.00792639985479614	40	4481	organonitrogen compound metabolic process	BP	0.9999999999	0.9999999999	BP organonitrogen compound metabolic process
+GO:0045184	0.997115505226293	0.00793980778562083	6	1152	establishment of protein localization	BP	0.9999999999	0.9999999999	BP establishment of protein localization
+GO:0016021	0.99522300376726	0.00848234686835198	21	2743	integral component of membrane	CC	0.9999999999	0.9999999999	CC integral component of membrane
+GO:0043170	0.994339123378345	0.00853366561281173	44	4826	macromolecule metabolic process	BP	0.9999999999	0.9999999999	BP macromolecule metabolic process
+GO:0000139	1	0.009172698404405	0	368	Golgi membrane	CC	0.9999999999	0.9999999999	CC Golgi membrane
+GO:0042886	0.996609532385967	0.00920142404138954	6	1137	amide transport	BP	0.9999999999	0.9999999999	BP amide transport
+GO:0015833	0.996374453839856	0.00978110560967643	6	1129	peptide transport	BP	0.9999999999	0.9999999999	BP peptide transport
+GO:0019538	0.993996536279329	0.00993128319016952	27	3232	protein metabolic process	BP	0.9999999999	0.9999999999	BP protein metabolic process
+GO:0015031	0.996252460443962	0.0100804636060584	6	1124	protein transport	BP	0.9999999999	0.9999999999	BP protein transport
+GO:0008289	1	0.0107202558948661	0	368	lipid binding	MF	0.9999999999	0.9999999999	MF lipid binding
+GO:0051128	0.995674044164536	0.0108317325030586	7	1245	regulation of cellular component organization	BP	0.9999999999	0.9999999999	BP regulation of cellular component organization
+GO:0009966	0.996276259477015	0.0118803781214345	4	913	regulation of signal transduction	BP	0.9999999999	0.9999999999	BP regulation of signal transduction
+GO:0065007	0.991766426837825	0.0121141072444841	46	5001	biological regulation	BP	0.9999999999	0.9999999999	BP biological regulation
+GO:0071705	0.994502225674862	0.0123492981276928	9	1437	nitrogen compound transport	BP	0.9999999999	0.9999999999	BP nitrogen compound transport
+GO:0048583	0.99442825142679	0.0130122221662484	8	1355	regulation of response to stimulus	BP	0.9999999999	0.9999999999	BP regulation of response to stimulus
+GO:0098772	0.997146115638546	0.0132054226241799	2	640	molecular function regulator	MF	0.9999999999	0.9999999999	MF molecular function regulator
+GO:0044459	0.995769404247556	0.0133218237588426	4	888	plasma membrane part	CC	0.9999999999	0.9999999999	CC plasma membrane part
+GO:0097458	0.996984550704891	0.0138607802287222	2	622	neuron part	CC	0.9999999999	0.9999999999	CC neuron part
+GO:0050789	0.99007386875939	0.014700906395593	42	4590	regulation of biological process	BP	0.9999999999	0.9999999999	BP regulation of biological process
+GO:0031226	1	0.0150057176830612	0	341	intrinsic component of plasma membrane	CC	0.9999999999	0.9999999999	CC intrinsic component of plasma membrane
+GO:0005764	1	0.015371687482064	0	326	lysosome	CC	0.9999999999	0.9999999999	CC lysosome
+GO:0006325	1	0.0156960305837504	0	327	chromatin organization	BP	0.9999999999	0.9999999999	BP chromatin organization
+GO:0006807	0.988717842658506	0.0158363350953078	57	5839	nitrogen compound metabolic process	BP	0.9999999999	0.9999999999	BP nitrogen compound metabolic process
+GO:0044421	0.997683331462165	0.0165147419779379	1	479	extracellular region part	CC	0.9999999999	0.9999999999	CC extracellular region part
+GO:0044451	0.997603506706367	0.0170000218910102	1	484	nucleoplasm part	CC	0.9999999999	0.9999999999	CC nucleoplasm part
+GO:0050794	0.988586929233164	0.0170021681014708	39	4283	regulation of cellular process	BP	0.9999999999	0.9999999999	BP regulation of cellular process
+GO:0051050	1	0.0185672420312011	0	308	positive regulation of transport	BP	0.9999999999	0.9999999999	BP positive regulation of transport
+GO:0005887	1	0.0186838366016945	0	324	integral component of plasma membrane	CC	0.9999999999	0.9999999999	CC integral component of plasma membrane
+GO:0051641	0.99030753716736	0.0207579690987027	9	1348	cellular localization	BP	0.9999999999	0.9999999999	BP cellular localization
+GO:0005102	1	0.02225293995707	0	307	signaling receptor binding	MF	0.9999999999	0.9999999999	MF signaling receptor binding
+GO:0044877	0.99466588317815	0.0227941524123574	2	582	protein-containing complex binding	MF	0.9999999999	0.9999999999	MF protein-containing complex binding
+GO:0051649	0.989200254356279	0.0248714733998073	7	1116	establishment of localization in cell	BP	0.9999999999	0.9999999999	BP establishment of localization in cell
+GO:0031982	0.989648907081228	0.0252659529141372	6	1042	vesicle	CC	0.9999999999	0.9999999999	CC vesicle
+GO:0044260	0.981906658678195	0.0260114738239191	42	4378	cellular macromolecule metabolic process	BP	0.9999999999	0.9999999999	BP cellular macromolecule metabolic process
+GO:0007186	1	0.026144239290206	0	287	G protein-coupled receptor signaling pathway	BP	0.9999999999	0.9999999999	BP G protein-coupled receptor signaling pathway
+GO:1990234	0.993744832851177	0.0261622015935195	2	573	transferase complex	CC	0.9999999999	0.9999999999	CC transferase complex
+GO:0048193	1	0.0271908893685763	0	280	Golgi vesicle transport	BP	0.9999999999	0.9999999999	BP Golgi vesicle transport
+GO:0048471	1	0.0278522755698758	0	286	perinuclear region of cytoplasm	CC	0.9999999999	0.9999999999	CC perinuclear region of cytoplasm
+GO:0032879	0.989105463676017	0.028296781799212	5	899	regulation of localization	BP	0.9999999999	0.9999999999	BP regulation of localization
+GO:0060627	1	0.0296412125039469	0	273	regulation of vesicle-mediated transport	BP	0.9999999999	0.9999999999	BP regulation of vesicle-mediated transport
+GO:0016072	1	0.0301548133811041	0	271	rRNA metabolic process	BP	0.9999999999	0.9999999999	BP rRNA metabolic process
+GO:1902531	0.992044614010637	0.0321822039296884	2	552	regulation of intracellular signal transduction	BP	0.9999999999	0.9999999999	BP regulation of intracellular signal transduction
+GO:0007264	1	0.0325900623967403	0	257	small GTPase mediated signal transduction	BP	0.9999999999	0.9999999999	BP small GTPase mediated signal transduction
+GO:0006364	1	0.0340084062106961	0	261	rRNA processing	BP	0.9999999999	0.9999999999	BP rRNA processing
+GO:0048585	0.990127720048319	0.0387138251562158	2	542	negative regulation of response to stimulus	BP	0.9999999999	0.9999999999	BP negative regulation of response to stimulus
+GO:0005768	0.993618320138087	0.0389412100002232	1	399	endosome	CC	0.9999999999	0.9999999999	CC endosome
+GO:0045786	1	0.040082741032291	0	250	negative regulation of cell cycle	BP	0.9999999999	0.9999999999	BP negative regulation of cell cycle
+GO:0065009	0.983826006496436	0.0401682008331177	5	872	regulation of molecular function	BP	0.9999999999	0.9999999999	BP regulation of molecular function
+GO:0016773	0.982021554744566	0.0413783631573582	6	964	phosphotransferase activity, alcohol group as acceptor	MF	0.9999999999	0.9999999999	MF phosphotransferase activity, alcohol group as acceptor
+GO:0016020	0.969730803310078	0.0421891269254439	43	4360	membrane	CC	0.9999999999	0.9999999999	CC membrane
+GO:0051241	1	0.0424492176066384	0	259	negative regulation of multicellular organismal process	BP	0.9999999999	0.9999999999	BP negative regulation of multicellular organismal process
+GO:0034660	0.988401661870199	0.0444220511941323	2	497	ncRNA metabolic process	BP	0.9999999999	0.9999999999	BP ncRNA metabolic process
+GO:0046907	0.979212082901454	0.0447750018600081	7	1036	intracellular transport	BP	0.9999999999	0.9999999999	BP intracellular transport
+GO:0040008	1	0.0456271373247333	0	237	regulation of growth	BP	0.9999999999	0.9999999999	BP regulation of growth
+GO:0050793	0.98076553674416	0.0468011977756867	5	840	regulation of developmental process	BP	0.9999999999	0.9999999999	BP regulation of developmental process
+GO:0043005	0.991945226677479	0.0472582481125189	1	371	neuron projection	CC	0.9999999999	0.9999999999	CC neuron projection
+GO:0006468	0.981847610712461	0.048318649691843	4	741	protein phosphorylation	BP	0.9999999999	0.9999999999	BP protein phosphorylation
+GO:0007166	0.991486924941871	0.0494664704030905	1	372	cell surface receptor signaling pathway	BP	0.9999999999	0.9999999999	BP cell surface receptor signaling pathway
+GO:0055085	0.98126372824673	0.0496642917523193	4	758	transmembrane transport	BP	0.9999999999	0.9999999999	BP transmembrane transport

@@ -1,0 +1,90 @@
+###################
+###################
+# DESeq2 and GOSeq
+###################
+###################
+
+# Note: file 'DESeq2.50507.dir/diffExpr.P0.001_C2.matrix.RData' was too large to store on Github
+# the file was therefore split using "split -b 50000000 diffExpr.P0.001_C2.matrix.RData"
+# to restore file, use command "cat x* > diffExpr.P0.001_C2.matrix.RData"
+
+################################################
+# Build Transcript and Gene Expression Matrices
+################################################
+
+/usr/local/Cellar/trinity/2.11.0/libexec/util/abundance_estimates_to_matrix.pl \
+--est_method RSEM \
+--gene_trans_map ../0_Transcriptome_Analysis/Holobiont_Trinity.map \
+../1_RSEM/15C_A.isoforms.results \
+../1_RSEM/15C_B.isoforms.results \
+../1_RSEM/15C_C.isoforms.results \
+../1_RSEM/25C_D.isoforms.results \
+../1_RSEM/25C_E.isoforms.results \
+../1_RSEM/25C_F.isoforms.results \
+../1_RSEM/32C_G.isoforms.results \
+../1_RSEM/32C_H.isoforms.results \
+../1_RSEM/32C_I.isoforms.results
+
+# Create averaged matrix (for heat maps)
+
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/replicates_to_sample_averages_matrix.pl \
+--matrix RSEM.gene.TMM.EXPR.matrix \
+--samples_file samples_file.txt
+
+##############################################
+# Extract GO assignments per gene and lengths
+##############################################
+
+/Users/davidgold/Documents/bioinformatics/Trinotate-Trinotate-v3.2.0/util/extract_GO_assignments_from_Trinotate_xls.pl \
+--Trinotate_xls ../2_Trinotate/Trinotate.Holobiont.report.txt \
+-G --include_ancestral_terms \
+> go_annotations.txt
+
+# manually create 'Trinity.isoform_lengths.txt' 
+
+/usr/local/Cellar/trinity/2.11.0/libexec/util/misc/TPM_weighted_gene_length.py  \
+--gene_trans_map ../0_Transcriptome_Analysis/Holobiont_Trinity.map \
+--trans_lengths isoform_lengths.txt \
+--TPM_matrix RSEM.isoform.TPM.not_cross_norm > gene_lengths.txt
+
+###########################################
+# Running Differential Expression Analysis
+###########################################
+
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/run_DE_analysis.pl \
+--matrix RSEM.gene.counts.matrix \
+--method DESeq2 \
+--samples_file samples_file.txt
+
+cd DESeq2.50507.dir
+
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/analyze_diff_expr.pl \
+--matrix ../RSEM.gene.TMM.EXPR.matrix \
+--samples ../samples_file.txt \
+--examine_GO_enrichment --GO_annots ../go_annotations.txt --gene_lengths ../gene_lengths.txt
+
+# Identify genes with p-value < 0.05 (less stringent DE assignment for downstream analyses)
+
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/analyze_diff_expr.pl \
+--matrix ../RSEM.gene.TMM.EXPR.matrix \
+--samples ../samples_file.txt -P 0.05
+
+rm diffExpr.P0.05_C2.matrix.RData
+
+###############
+# Generate PCA
+###############
+
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/PtR \
+--matrix ../RSEM.gene.counts.matrix \
+--compare_replicates \
+-s ../samples_file.txt --min_rowSums 10 --log2 \
+--CPM --center_rows \
+--prin_comp 2
+
+##########
+# Cleanup
+##########
+
+# Remove intermediate files that are too large for GitHub
+rm ./DESeq2.50507.dir/diffExpr.P0.001_C2.matrix.RData

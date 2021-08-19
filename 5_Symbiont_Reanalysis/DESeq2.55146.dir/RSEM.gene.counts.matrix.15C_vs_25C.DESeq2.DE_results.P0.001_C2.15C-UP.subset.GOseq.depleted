@@ -1,0 +1,57 @@
+category	over_represented_pvalue	under_represented_pvalue	numDEInCat	numInCat	term	ontology	over_represented_FDR	under_represented_FDR	go_term
+GO:1901566	1	3.15554232109073e-06	0	211	organonitrogen compound biosynthetic process	BP	0.9999999999	0.0196180066102211	BP organonitrogen compound biosynthetic process
+GO:0044271	0.99999667684299	4.96755620166586e-05	1	208	cellular nitrogen compound biosynthetic process	BP	0.9999999999	0.154416484528783	BP cellular nitrogen compound biosynthetic process
+GO:0032991	0.99994807019119	0.000149773783475782	14	562	protein-containing complex	CC	0.9999999999	0.310381203956311	CC protein-containing complex
+GO:0016787	0.999920424187926	0.000311518403422332	6	336	hydrolase activity	MF	0.9999999999	0.48417747851916	MF hydrolase activity
+GO:0016070	1	0.000738420059573204	0	143	RNA metabolic process	BP	0.9999999999	0.834146096893339	BP RNA metabolic process
+GO:0043603	1	0.000805030815724631	0	129	cellular amide metabolic process	BP	0.9999999999	0.834146096893339	BP cellular amide metabolic process
+GO:0043604	1	0.00152607897266858	0	116	amide biosynthetic process	BP	0.9999999999	0.9999999999	BP amide biosynthetic process
+GO:1990904	0.999732672531469	0.00169229469245663	2	194	ribonucleoprotein complex	CC	0.9999999999	0.9999999999	CC ribonucleoprotein complex
+GO:0006518	1	0.00210114277171428	0	113	peptide metabolic process	BP	0.9999999999	0.9999999999	BP peptide metabolic process
+GO:0016462	0.99953850618431	0.00221026764199867	3	203	pyrophosphatase activity	MF	0.9999999999	0.9999999999	MF pyrophosphatase activity
+GO:0016817	0.99953850618431	0.00221026764199867	3	203	hydrolase activity, acting on acid anhydrides	MF	0.9999999999	0.9999999999	MF hydrolase activity, acting on acid anhydrides
+GO:0016818	0.99953850618431	0.00221026764199867	3	203	hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides	MF	0.9999999999	0.9999999999	MF hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides
+GO:0030529	0.999629387943105	0.00227060975546074	2	187	NA	NA	0.9999999999	0.9999999999	none
+GO:0034641	0.998923007483471	0.00277028880223496	11	423	cellular nitrogen compound metabolic process	BP	0.9999999999	0.9999999999	BP cellular nitrogen compound metabolic process
+GO:0048518	0.999684114620404	0.0030527692570161	1	146	positive regulation of biological process	BP	0.9999999999	0.9999999999	BP positive regulation of biological process
+GO:0006412	1	0.00308069774363053	0	105	translation	BP	0.9999999999	0.9999999999	BP translation
+GO:0043043	1	0.00308069774363053	0	105	peptide biosynthetic process	BP	0.9999999999	0.9999999999	BP peptide biosynthetic process
+GO:0017111	0.999278377125774	0.00330970701693431	3	195	nucleoside-triphosphatase activity	MF	0.9999999999	0.9999999999	MF nucleoside-triphosphatase activity
+GO:0003676	0.998798656137038	0.00381235888785922	6	289	nucleic acid binding	MF	0.9999999999	0.9999999999	MF nucleic acid binding
+GO:0003735	1	0.00474034380597548	0	96	structural constituent of ribosome	MF	0.9999999999	0.9999999999	MF structural constituent of ribosome
+GO:1901362	0.999111662720029	0.00757769098268047	1	115	organic cyclic compound biosynthetic process	BP	0.9999999999	0.9999999999	BP organic cyclic compound biosynthetic process
+GO:0003723	0.997845151695073	0.00769649919271865	4	213	RNA binding	MF	0.9999999999	0.9999999999	MF RNA binding
+GO:0048522	0.999059227532843	0.00793977256828641	1	130	positive regulation of cellular process	BP	0.9999999999	0.9999999999	BP positive regulation of cellular process
+GO:0044267	0.996032580283234	0.0106664498475776	7	284	cellular protein metabolic process	BP	0.9999999999	0.9999999999	BP cellular protein metabolic process
+GO:0044391	1	0.0114532565001068	0	79	ribosomal subunit	CC	0.9999999999	0.9999999999	CC ribosomal subunit
+GO:0005198	0.998508133537358	0.0118444964849133	1	115	structural molecule activity	MF	0.9999999999	0.9999999999	MF structural molecule activity
+GO:0018130	0.998400472703425	0.0126042004211012	1	104	heterocycle biosynthetic process	BP	0.9999999999	0.9999999999	BP heterocycle biosynthetic process
+GO:0019438	0.997836375205605	0.0163232417229184	1	100	aromatic compound biosynthetic process	BP	0.9999999999	0.9999999999	BP aromatic compound biosynthetic process
+GO:0090304	0.995443595315163	0.0170360452851293	3	182	nucleic acid metabolic process	BP	0.9999999999	0.9999999999	BP nucleic acid metabolic process
+GO:0006807	0.990339542649907	0.0173249447126328	27	710	nitrogen compound metabolic process	BP	0.9999999999	0.9999999999	BP nitrogen compound metabolic process
+GO:0006396	1	0.018240962113349	0	81	RNA processing	BP	0.9999999999	0.9999999999	BP RNA processing
+GO:0051179	0.992675146237203	0.0209157892701943	5	219	localization	BP	0.9999999999	0.9999999999	BP localization
+GO:0034622	1	0.0209828022177776	0	73	cellular protein-containing complex assembly	BP	0.9999999999	0.9999999999	BP cellular protein-containing complex assembly
+GO:0048583	1	0.022526990541732	0	71	regulation of response to stimulus	BP	0.9999999999	0.9999999999	BP regulation of response to stimulus
+GO:0044424	0.985582918695685	0.0244922067332288	52	1179	intracellular part	CC	0.9999999999	0.9999999999	CC intracellular part
+GO:0001882	1	0.0245723018191287	0	64	nucleoside binding	MF	0.9999999999	0.9999999999	MF nucleoside binding
+GO:0032549	1	0.0245723018191287	0	64	ribonucleoside binding	MF	0.9999999999	0.9999999999	MF ribonucleoside binding
+GO:0016192	1	0.0261572936478504	0	65	vesicle-mediated transport	BP	0.9999999999	0.9999999999	BP vesicle-mediated transport
+GO:0003729	1	0.026449848936672	0	63	mRNA binding	MF	0.9999999999	0.9999999999	MF mRNA binding
+GO:0019001	1	0.0277373862938427	0	63	guanyl nucleotide binding	MF	0.9999999999	0.9999999999	MF guanyl nucleotide binding
+GO:0032561	1	0.0277373862938427	0	63	guanyl ribonucleotide binding	MF	0.9999999999	0.9999999999	MF guanyl ribonucleotide binding
+GO:0031323	0.991745838943988	0.0286373671472182	3	163	regulation of cellular metabolic process	BP	0.9999999999	0.9999999999	BP regulation of cellular metabolic process
+GO:0001883	1	0.0290426506028806	0	62	purine nucleoside binding	MF	0.9999999999	0.9999999999	MF purine nucleoside binding
+GO:0005525	1	0.0290426506028806	0	62	GTP binding	MF	0.9999999999	0.9999999999	MF GTP binding
+GO:0032550	1	0.0290426506028806	0	62	purine ribonucleoside binding	MF	0.9999999999	0.9999999999	MF purine ribonucleoside binding
+GO:0034660	1	0.0290796765855609	0	71	ncRNA metabolic process	BP	0.9999999999	0.9999999999	BP ncRNA metabolic process
+GO:0051234	0.988054279294074	0.0322354614405806	5	207	establishment of localization	BP	0.9999999999	0.9999999999	BP establishment of localization
+GO:0009893	0.995069194894404	0.0326515918149506	1	97	positive regulation of metabolic process	BP	0.9999999999	0.9999999999	BP positive regulation of metabolic process
+GO:0006810	0.987226665407579	0.0341932709412955	5	205	transport	BP	0.9999999999	0.9999999999	BP transport
+GO:0043933	0.994781616961643	0.0342497606827459	1	94	protein-containing complex subunit organization	BP	0.9999999999	0.9999999999	BP protein-containing complex subunit organization
+GO:0044260	0.978688980953593	0.0386550234254876	17	483	cellular macromolecule metabolic process	BP	0.9999999999	0.9999999999	BP cellular macromolecule metabolic process
+GO:1902494	0.986008445230173	0.0402348048277266	4	175	catalytic complex	CC	0.9999999999	0.9999999999	CC catalytic complex
+GO:0010604	0.99333839372368	0.0419275590915638	1	92	positive regulation of macromolecule metabolic process	BP	0.9999999999	0.9999999999	BP positive regulation of macromolecule metabolic process
+GO:1901360	0.977231012520451	0.0450910514799634	11	340	organic cyclic compound metabolic process	BP	0.9999999999	0.9999999999	BP organic cyclic compound metabolic process
+GO:0044464	0.969937505910828	0.0484255828601686	55	1211	cell part	CC	0.9999999999	0.9999999999	CC cell part
+GO:0044422	0.970620822215908	0.0484857530289969	26	651	organelle part	CC	0.9999999999	0.9999999999	CC organelle part

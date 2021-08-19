@@ -1,0 +1,94 @@
+#########################################
+# Get basis statistics on transcriptomes
+#########################################
+
+for i in *fasta
+do
+	/usr/local/Cellar/trinity/2.8.3_1/libexec/util/TrinityStats.pl $i
+	TransDecoder.LongOrfs -t $i
+	TransDecoder.Predict --no_refine_starts -t $i
+done
+
+
+######################################
+# Perform BUSCO completeness analysis
+######################################
+
+	# BUSCO run on Docker environment (https://www.docker.com/products/docker-desktop)
+
+docker run -u $(id -u) -v ./0_Transcriptome_Analysis:/busco_wd ezlabgva/busco:v4.0.5_cv1 busco -i Foraminifera_Trinity.fasta \
+-m tran -o Foram-BUSCO -l eukaryota_odb10
+
+docker run -u $(id -u) -v ./0_Transcriptome_Analysis:/busco_wd ezlabgva/busco:v4.0.5_cv1 busco -i Symbiont_Trinity.fasta \
+-m tran -o Symbiont-BUSCO -l eukaryota_odb10
+
+docker run -u $(id -u) -v ./0_Transcriptome_Analysis:/busco_wd ezlabgva/busco:v4.0.5_cv1 busco -i Holobiont_Trinity.fasta \
+-m tran -o Holobiont-BUSCO -l eukaryota_odb10
+
+	# Comparison to Reticulomyxa filosa proteome (https://www.ncbi.nlm.nih.gov/genome/11245)
+
+docker run -u $(id -u) -v ./0_Transcriptome_Analysis:/busco_wd ezlabgva/busco:v4.0.5_cv1 busco -i GCA_000512085.1_Reti_assembly1.0_protein.faa \
+-m protein -o Holobiont-BUSCO -l eukaryota_odb10
+
+# Results
+
+# Foram-BUSCO
+# 
+# 	--------------------------------------------------
+# 	|Results from dataset eukaryota_odb10             |
+# 	--------------------------------------------------
+# 	|C:12.6%[S:11.4%,D:1.2%],F:29.8%,M:57.6%,n:255    |
+# 	|32	Complete BUSCOs (C)                      	|
+# 	|29	Complete and single-copy BUSCOs (S)    		 |
+# 	|3	Complete and duplicated BUSCOs (D)       	 |
+# 	|76	Fragmented BUSCOs (F)                    	 |
+# 	|147	Missing BUSCOs (M)                       |
+# 	|255	Total BUSCO groups searched              |
+# 	--------------------------------------------------
+# 
+# Symbiont-BUSCO
+# 
+# 	--------------------------------------------------
+# 	|Results from dataset eukaryota_odb10             |
+# 	--------------------------------------------------
+# 	|C:0.0%[S:0.0%,D:0.0%],F:7.8%,M:92.2%,n:255       |
+# 	|0	Complete BUSCOs (C)                       |
+# 	|0	Complete and single-copy BUSCOs (S)       |
+# 	|0	Complete and duplicated BUSCOs (D)        |
+# 	|20	Fragmented BUSCOs (F)                     |
+# 	|235	Missing BUSCOs (M)                        |
+# 	|255	Total BUSCO groups searched               |
+# 	--------------------------------------------------
+# 
+# Holobiont-BUSCO
+# 
+#	--------------------------------------------------
+#	|Results from dataset eukaryota_odb10             |
+#	--------------------------------------------------
+#	|C:43.5%[S:37.6%,D:5.9%],F:24.7%,M:31.8%,n:255    |
+#	|111	Complete BUSCOs (C)                       |
+#	|96	Complete and single-copy BUSCOs (S)       |
+#	|15	Complete and duplicated BUSCOs (D)        |
+#	|63	Fragmented BUSCOs (F)                     |
+#	|81	Missing BUSCOs (M)                        |
+#	|255	Total BUSCO groups searched               |
+#	--------------------------------------------------
+
+#########################
+# Comparison of datasets
+#########################
+
+makeblastdb -in Holobiont_Trinity.fasta -dbtype nucl -out Holo
+makeblastdb -in Symbiont_Trinity.fasta -dbtype nucl -out Sym
+
+blastn -task megablast -query Symbiont_Trinity.fasta -db Holo \
+-max_target_seqs 1 -outfmt 6 -out BLAST-Symbiont_vs_Holobiont.txt
+
+blastn -task megablast -query Foraminifera_Trinity.fasta -db Holo \
+-max_target_seqs 1 -outfmt 6 -out BLAST-Foraminifera_vs_Holobiont.txt
+
+blastn -task megablast -query Foraminifera_Trinity.fasta -db Sym \
+-max_target_seqs 1 -outfmt 6 -out BLAST-Foraminifera_vs_Symbiont.txt
+
+rm Holo*
+rm Sym*

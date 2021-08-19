@@ -1,0 +1,7 @@
+/var/spool/slurmd/job1598399/slurm_script: line 10: cd: /home/dgold/Foram_Data/Sample_J: No such file or directory
+21064491 reads; of these:
+  21064491 (100.00%) were unpaired; of these:
+    4555603 (21.63%) aligned 0 times
+    8897244 (42.24%) aligned exactly 1 time
+    7611644 (36.13%) aligned >1 times
+78.37% overall alignment rate

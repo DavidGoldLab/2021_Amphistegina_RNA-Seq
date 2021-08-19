@@ -1,0 +1,116 @@
+#########
+#########
+# GO_MWU
+#########
+#########
+
+# Based on Code from https://github.com/z0on/GO_MWU
+
+######################
+# Prepare input files
+######################
+
+# Get GO hierarchy file
+wget http://purl.obolibrary.org/obo/go.obo
+
+# Get GO annotations table
+cp ../3_deSEQ2/go_annotations.txt ./
+# replace commas with semicolons
+gsed -i 's/,/;/g' go_annotations.txt
+
+# Create table of measurements for heat stress temperature (log-fold change)
+awk -F '\t' '{print $1,$7}' \
+../3_deSEQ2/DESeq2.50507.dir/RSEM.gene.counts.matrix.25C_vs_32C.DESeq2.DE_results \
+> 25C_vs_32C.measurment_table.txt
+# remove first line
+gsed -i '1d' 25C_vs_32C.measurment_table.txt
+# replace tabs with commas
+gsed -i 's/ /,/g' 25C_vs_32C.measurment_table.txt
+
+# Create table of measurements for low vs regular temperature (log-fold change)
+awk -F '\t' '{print $1,$7}' \
+../3_deSEQ2/DESeq2.50507.dir/RSEM.gene.counts.matrix.15C_vs_25C.DESeq2.DE_results \
+> 15C_vs_25C.measurment_table.txt
+# remove first line
+gsed -i '1d' 15C_vs_25C.measurment_table.txt
+# replace tabs with commas
+gsed -i 's/ /,/g' 15C_vs_25C.measurment_table.txt
+
+##################
+# Run GO_MWU in R
+##################
+
+R
+
+# Heat stress
+
+# Input data
+input="25C_vs_32C.measurment_table.txt" # two columns of comma-separated values: gene id, continuous measure of significance. To perform standard GO enrichment analysis based on Fisher's exact test, use binary measure (0 or 1, i.e., either sgnificant or not).
+goAnnotations="go_annotations.txt" # two-column, tab-delimited, one line per gene, multiple GO terms separated by semicolon. If you have multiple lines per gene, use nrify_GOtable.pl prior to running this script.
+goDatabase="go.obo" # download from http://www.geneontology.org/GO.downloads.ontology.shtml
+goDivision="BP" # either MF, or BP, or CC
+source("gomwu.functions.R")
+
+# Calculate stats
+gomwuStats(input, goDatabase, goAnnotations, goDivision,
+	perlPath="perl", # replace with full path to perl executable if it is not in your system's PATH already
+	largest=0.1,  # a GO category will not be considered if it contains more than this fraction of the total number of genes
+	smallest=5,   # a GO category should contain at least this many genes to be considered
+	clusterCutHeight=0.25, # threshold for merging similar (gene-sharing) terms. See README for details.
+)
+
+# Plot results
+quartz()
+results=gomwuPlot(input,goAnnotations,goDivision,
+ 	absValue=1, # un-remark this if you are using log2-fold changes
+ 	level1=0.01, # FDR threshold for plotting. Specify level1=1 to plot all GO categories containing genes exceeding the absValue.
+ 	level2=0.01, # FDR cutoff to print in regular (not italic) font.
+ 	level3=0.001, # FDR cutoff to print in large bold font.
+ 	txtsize=1,    # decrease to fit more on one page, or increase (after rescaling the plot so the tree fits the text) for better "word cloud" effect
+ 	treeHeight=0.5, # height of the hierarchical clustering tree
+ 	colors=c("dodgerblue2","firebrick1","skyblue2","lightcoral") # these are default colors, un-remar and change if needed
+ )
+ 
+	# saved as Rplot.25C_vs_32C.pdf
+	
+	
+
+# Low vs. Reg
+
+# Input data
+input="15C_vs_25C.measurment_table.txt" # two columns of comma-separated values: gene id, continuous measure of significance. To perform standard GO enrichment analysis based on Fisher's exact test, use binary measure (0 or 1, i.e., either sgnificant or not).
+goAnnotations="go_annotations.txt" # two-column, tab-delimited, one line per gene, multiple GO terms separated by semicolon. If you have multiple lines per gene, use nrify_GOtable.pl prior to running this script.
+goDatabase="go.obo" # download from http://www.geneontology.org/GO.downloads.ontology.shtml
+goDivision="BP" # either MF, or BP, or CC
+source("gomwu.functions.R")
+
+# Calculate stats
+gomwuStats(input, goDatabase, goAnnotations, goDivision,
+	perlPath="perl", # replace with full path to perl executable if it is not in your system's PATH already
+	largest=0.1,  # a GO category will not be considered if it contains more than this fraction of the total number of genes
+	smallest=5,   # a GO category should contain at least this many genes to be considered
+	clusterCutHeight=0.25, # threshold for merging similar (gene-sharing) terms. See README for details.
+)
+
+# Plot results
+quartz()
+results=gomwuPlot(input,goAnnotations,goDivision,
+ 	absValue=1, # un-remark this if you are using log2-fold changes
+ 	level1=0.01, # FDR threshold for plotting. Specify level1=1 to plot all GO categories containing genes exceeding the absValue.
+ 	level2=0.01, # FDR cutoff to print in regular (not italic) font.
+ 	level3=0.001, # FDR cutoff to print in large bold font.
+ 	txtsize=1.2,    # decrease to fit more on one page, or increase (after rescaling the plot so the tree fits the text) for better "word cloud" effect
+ 	treeHeight=0.5, # height of the hierarchical clustering tree
+ 	colors=c("dodgerblue2","firebrick1","skyblue2","lightcoral") # these are default colors, un-remar and change if needed
+ )
+
+	# saved as Rplot.15C_vs_25C.pdf
+
+#########
+# Cleanup
+#########
+
+Remove intermediate files too large for GitHub
+rm dissim_BP_Low_vs_Reg.measurment_table.txt_go_annotations.txt
+rm dissim_BP_15C_vs_25C.measurment_table.txt_go_annotations.txt
+rm dissim_BP_High_vs_Reg.measurment_table.txt_go_annotations.txt

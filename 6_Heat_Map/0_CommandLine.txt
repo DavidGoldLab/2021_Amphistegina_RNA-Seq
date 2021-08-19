@@ -1,0 +1,159 @@
+##############################
+# Generate Heat Maps with PtR
+##############################
+
+# Create gene names file manually using ../2_Trinotate/Trinotate.Holobiont.report.txt
+
+########################################################
+# Extract holobiont genes associated with photosynthesis
+########################################################
+
+# Extract all genes associated with photosynthesis (GO:0015979):
+sed -n '/.*GO:0015979.*/p' ../3_DESeq2/go_annotations.txt > tmp1.txt
+# Extract all genes associated with photosynthesis, light harvesting (GO:0009765)
+sed -n '/.*GO:0009765.*/p' ../3_DESeq2/go_annotations.txt > tmp2.txt
+# Extract all genes associated with photosynthesis, dark reaction (GO:0019685)
+sed -n '/.*GO:0019685.*/p' ../3_DESeq2/go_annotations.txt > tmp3.txt
+# Extract all genes associated with photosynthesis, light reaction (GO:0019684)
+sed -n '/.*GO:0019684.*/p' ../3_DESeq2/go_annotations.txt > tmp4.txt
+# Extract all genes associated with photosystem (GO:0009521)
+sed -n '/.*GO:0009521.*/p' ../3_DESeq2/go_annotations.txt > tmp5.txt
+cat tmp* > tmp_all.txt
+# extract first column and sort
+awk '{print $1}' tmp_all.txt > tmp_all.first.txt
+sort -u tmp_all.first.txt > 1_Gene_List.txt
+rm tmp*
+
+# Retain genes with p-value < 0.05, logfold change > 2
+
+join <(sort 1_Gene_List.txt) <(sort ../3_DESeq2/DESeq2.50507.dir/diffExpr.P0.05_C2.matrix) \
+> 2_DE_Gene_List.txt
+
+# Append gene names
+
+join <(sort gene_names.txt) <(sort 2_DE_Gene_List.txt) > 3_Gene_Matrix.txt
+# manually remove repetitive lines for multiple isoform annotations
+
+# Append header
+gsed -i "1 i\\\t15C_A\t15C_B\t15C_C\t25C_D\t25C_E\t25C_F\t32C_G\t32C_H\t32C_I" 3_Gene_Matrix.txt
+
+# Generate heat map
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/ptr \
+--matrix 3_Gene_Matrix.txt \
+--heatmap --center_rows --log2 \
+--output 4_Photosynthesis.Heat_Map
+
+
+
+# Photosynthesis (KEGG)
+
+# Collect TMM data
+Join -t $'\t' <(sort Photosynthesis.ko00195.1_List.txt) <(sort ../3_deSEQ2/RSEM.gene.TMM.EXPR.matrix) \
+> Photosynthesis.ko00195.2_TMM.txt
+# Append header
+gsed -i "1 i\\\tA_Low_1\tB_Low_2\tC_Low_3\tD_Reg_1\tE_Reg_2\tF_Reg_3\tG_High_1\tH_High_2\tI_High_3" Photosynthesis.ko00195.2_TMM.txt
+# Generate heat map
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/ptr \
+--matrix Photosynthesis.ko00195.2_TMM.txt \
+--heatmap --center_rows --log2 \
+--output Photosynthesis.ko00195.3_Heatmap.txt
+
+# Photosynthesis (GO)
+
+Join -t $'\t' Photosynthesis.go0015979.1_List.txt ../3_deSEQ2/RSEM.gene.TMM.EXPR.matrix \
+> Photosynthesis.go0015979.2_TMM.txt
+# Append header
+gsed -i "1 i\\\tA_Low_1\tB_Low_2\tC_Low_3\tD_Reg_1\tE_Reg_2\tF_Reg_3\tG_High_1\tH_High_2\tI_High_3" Photosynthesis.ko00195.2_TMM.txt
+# Generate heat map
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/ptr \
+--matrix Photosynthesis.go0015979.2_TMM.txt \
+--heatmap --center_rows --log2 \
+--output Photosynthesis.go0015979.3_Heatmap.txt
+
+
+##################################################
+# Photosynthesis map comparing symbiont and foram
+##################################################
+
+# Extract genes with p-value < 0.05 (less stringent than original analysis)
+
+awk '{ print $1 }' \
+../../3_deSEQ2/DESeq2.33627.dir/diffExpr.P0.05_C2.matrix \
+> Holo_0_DE_Gene_List.txt
+gsed -i '1d' Holo_0_DE_Gene_List.txt
+
+awk '{ print $1 }' \
+../../7_Symbiont_Only_Analysis/DESeq2.8203.dir/diffExpr.P0.05_C2.matrix \
+> Symb_0_DE_Gene_List.txt
+gsed -i '1d' Symb_0_DE_Gene_List.txt
+
+# Extract genes with photosystem 1 or 2 GO terms (GO:0009522 / GO:0009523)
+
+grep '.*GO:000952[23].*' \
+../../3_deSEQ2/GoSeq_GO/go_annotations.txt \
+> tmp1
+awk '{ print $1 }' tmp1 > Holo_0_GO_List.txt
+rm tmp1
+
+grep '.*GO:000952[23].*' \
+../../7_Symbiont_Only_Analysis/go_annotations.txt \
+> tmp1
+awk '{ print $1 }' tmp1 > Symb_0_GO_List.txt
+rm tmp1
+
+# Combine genes with p-value < 0.05 and photosystem 1 or 2 GO terms and append first isoform ID
+
+join <(sort Holo_0_DE_Gene_List.txt) <(sort Holo_0_GO_List.txt) \
+> Holo_1_Photo_Genes.txt
+gsed -i "s/$/_i1/" Holo_1_Photo_Genes.txt
+
+join <(sort Symb_0_DE_Gene_List.txt) <(sort Symb_0_GO_List.txt) \
+> Symb_1_Photo_Genes.txt
+gsed -i "s/$/_i1/" Symb_1_Photo_Genes.txt
+
+# Get annotations from NCBI
+
+xargs samtools faidx ../../0_Transcriptome_Analysis/Uri_Abdu_trinity.Trinity.fasta \
+< Holo_1_Photo_Genes.txt > Holo_1_Photo_Genes.fasta
+
+xargs samtools faidx ../../0_Transcriptome_Analysis/Fragilariales_Trinity.fasta \
+< Symb_1_Photo_Genes.txt > Symb_1_Photo_Genes.fasta
+
+# Download all Diatom proteins in nr database at NCBI; append genus names; remove "uncultured" seqeunces
+
+makeblastdb -in sequence.fasta -dbtype prot -out sequence
+
+blastx -query Holo_1_Photo_Genes.fasta -db sequence \
+-outfmt 6 -out Holo_2_blastx.txt -evalue 10e-5 -max_target_seqs 1
+
+blastx -query Symb_1_Photo_Genes.fasta -db sequence \
+-outfmt 6 -out Symb_2_blastx.txt -evalue 10e-5 -max_target_seqs 1
+
+rm sequence*
+
+## Put all data together in Excel ##
+
+# Heat map (holobiont)
+# Collect TMM data
+Join -t $'\t' <(sort Holo_3_annotations.txt) <(sort ../../3_deSEQ2/RSEM.gene.TMM.EXPR.matrix) \
+> Photosynthesis.Holob.p05.2_TMM.txt
+# Modify manually
+# Append header
+gsed -i "1 i\\\tA_Low_1\tB_Low_2\tC_Low_3\tD_Reg_1\tE_Reg_2\tF_Reg_3\tG_High_1\tH_High_2\tI_High_3" Photosynthesis.Holob.p05.2_TMM.txt
+# Generate heat map
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/ptr \
+--matrix Photosynthesis.Holob.p05.2_TMM.txt \
+--heatmap --center_rows --log2 \
+--output Photosynthesis.Holob.p05.heatmap
+
+# Heat map (symbiont)
+Join -t $'\t' <(sort Symb_3_annotations.txt) <(sort ../../7_Symbiont_Only_Analysis/RSEM.gene.TMM.EXPR.matrix) \
+> Photosynthesis.Sym.p05.2_TMM.txt
+# Append header
+gsed -i "1 i\\\tA_Low_1\tB_Low_2\tC_Low_3\tD_Reg_1\tE_Reg_2\tF_Reg_3\tG_High_1\tH_High_2\tI_High_3" Photosynthesis.Sym.p05.2_TMM.txt
+# Generate heat map
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/ptr \
+--matrix Photosynthesis.Sym.p05.2_TMM.txt \
+--heatmap --center_rows --log2 \
+--output Photosynthesis.Symb.p05.heatmap
+

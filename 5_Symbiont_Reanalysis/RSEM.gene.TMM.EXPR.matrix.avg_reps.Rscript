@@ -1,0 +1,46 @@
+
+samples = read.table("samples_file.txt", header=F, check.names=F)
+sample_types = as.vector(unique(samples[,1]))
+nsamples = length(sample_types)
+
+data = read.table("RSEM.gene.TMM.EXPR.matrix", header=T, row.names=1, com='', nrows=10000, check.names=F)
+classes = sapply(data,class)
+data = read.table("RSEM.gene.TMM.EXPR.matrix", header=T, row.names=1, com='', colClasses=classes, check.names=F)
+data = as.matrix(data)
+sample_factoring = rep(NA, ncol(data))
+sample_expr_matrix = matrix(ncol=nsamples, nrow=nrow(data))
+colnames(sample_expr_matrix) = sample_types
+rownames(sample_expr_matrix) = rownames(data)
+
+for (i in 1:nsamples) {
+    sample_type = sample_types[i]
+    rep_indices = samples[,1] %in% sample_type 
+    #print(paste("rep_indices:", rep_indices))
+    rep_names = as.vector(samples[rep_indices,2])
+    cat("sample_type: ", sample_type, "
+")
+    cat("rep_names: ", rep_names, "
+")
+    col_indices = colnames(data) %in% rep_names 
+    #print(col_indices);
+    if (sum(col_indices) == 0) {
+        stop(cat("Error, no columns found matching sample type:", sample_type, "with replicate names:", rep_names))
+    }
+    if (sum(col_indices) != length(rep_names)) {
+        found_colnames = colnames(data)[col_indices]
+        missing = rep_names[ ! rep_names %in% found_colnames]
+        cat ("Error, not all replicates accounted for. Found only", sum(col_indices), "columns but have", length(rep_names), "replicates:", rep_names, "for sample:", sample_type, "missing:", missing)
+        stop()
+    }
+    sample_factoring[col_indices] = sample_type
+    avg_vals = NULL
+    if (0) {
+        avg_vals = apply(data[,col_indices, drop=F], 1, function(x) exp((mean(log(x+1)))) -1)
+    } else {
+        avg_vals = apply(data[,col_indices, drop=F], 1, mean)
+    }
+    sample_expr_matrix[,i] = sprintf("%.3f", avg_vals)
+}
+
+write.table(sample_expr_matrix, "RSEM.gene.TMM.EXPR.matrix.avg_reps.matrix", quote=F, sep="	")
+

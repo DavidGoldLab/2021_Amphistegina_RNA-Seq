@@ -1,0 +1,116 @@
+category	over_represented_pvalue	under_represented_pvalue	numDEInCat	numInCat	term	ontology	over_represented_FDR	go_term	gene_ids
+GO:0033293	0.000603109174025476	0.999993624039985	2	18	monocarboxylic acid binding	MF	0.9999999999	MF monocarboxylic acid binding	TRINITY_DN48678_c0_g1, TRINITY_DN57776_c0_g1
+GO:0046364	0.000824546297613791	0.999964942890173	3	87	monosaccharide biosynthetic process	BP	0.9999999999	BP monosaccharide biosynthetic process	TRINITY_DN23038_c0_g1, TRINITY_DN45249_c0_g1, TRINITY_DN48678_c0_g1
+GO:0001171	0.00170489476155388	0.999999278108234	1	2	reverse transcription	BP	0.9999999999	BP reverse transcription	TRINITY_DN48418_c0_g2
+GO:0009036	0.00170489476155388	0.999999278108234	1	2	type II site-specific deoxyribonuclease activity	MF	0.9999999999	MF type II site-specific deoxyribonuclease activity	TRINITY_DN48418_c0_g2
+GO:0015666	0.00170489476155388	0.999999278108234	1	2	restriction endodeoxyribonuclease activity	MF	0.9999999999	MF restriction endodeoxyribonuclease activity	TRINITY_DN48418_c0_g2
+GO:0032197	0.00170489476155388	0.999999278108234	1	2	transposition, RNA-mediated	BP	0.9999999999	BP transposition, RNA-mediated	TRINITY_DN48418_c0_g2
+GO:0032199	0.00170489476155388	0.999999278108234	1	2	reverse transcription involved in RNA-mediated transposition	BP	0.9999999999	BP reverse transcription involved in RNA-mediated transposition	TRINITY_DN48418_c0_g2
+GO:0019072	0.0020538364370507	1	1	1	viral genome packaging	BP	0.9999999999	BP viral genome packaging	TRINITY_DN48678_c0_g1
+GO:0019074	0.0020538364370507	1	1	1	viral RNA genome packaging	BP	0.9999999999	BP viral RNA genome packaging	TRINITY_DN48678_c0_g1
+GO:0044789	0.0020538364370507	1	1	1	modulation by host of viral release from host cell	BP	0.9999999999	BP modulation by host of viral release from host cell	TRINITY_DN48678_c0_g1
+GO:0044791	0.0020538364370507	1	1	1	positive regulation by host of viral release from host cell	BP	0.9999999999	BP positive regulation by host of viral release from host cell	TRINITY_DN48678_c0_g1
+GO:1901373	0.00251362245325184	1	1	1	lipid hydroperoxide transport	BP	0.9999999999	BP lipid hydroperoxide transport	TRINITY_DN59496_c0_g1
+GO:0016918	0.00256202702247727	1	1	1	retinal binding	MF	0.9999999999	MF retinal binding	TRINITY_DN57776_c0_g1
+GO:0019841	0.00256202702247727	1	1	1	retinol binding	MF	0.9999999999	MF retinol binding	TRINITY_DN57776_c0_g1
+GO:0071885	0.00273664508112544	1	1	1	N-terminal protein N-methyltransferase activity	MF	0.9999999999	MF N-terminal protein N-methyltransferase activity	TRINITY_DN14188_c0_g1
+GO:0016051	0.00338499043886791	0.999761936961086	3	148	carbohydrate biosynthetic process	BP	0.9999999999	BP carbohydrate biosynthetic process	TRINITY_DN23038_c0_g1, TRINITY_DN45249_c0_g1, TRINITY_DN48678_c0_g1
+GO:0048672	0.00426192678267336	0.999995483005836	1	2	positive regulation of collateral sprouting	BP	0.9999999999	BP positive regulation of collateral sprouting	TRINITY_DN57776_c0_g1
+GO:0004736	0.00552440578988934	0.999989877448446	1	3	pyruvate carboxylase activity	MF	0.9999999999	MF pyruvate carboxylase activity	TRINITY_DN48678_c0_g1
+GO:0032196	0.00553374613546009	0.999988575314916	1	4	transposition	BP	0.9999999999	BP transposition	TRINITY_DN48418_c0_g2
+GO:0003964	0.00622068178453078	0.999985558659849	1	4	RNA-directed DNA polymerase activity	MF	0.9999999999	MF RNA-directed DNA polymerase activity	TRINITY_DN48418_c0_g2
+GO:0032379	0.00631499540581996	0.999986768187943	1	3	positive regulation of intracellular lipid transport	BP	0.9999999999	BP positive regulation of intracellular lipid transport	TRINITY_DN59496_c0_g1
+GO:0032382	0.00631499540581996	0.999986768187943	1	3	positive regulation of intracellular sterol transport	BP	0.9999999999	BP positive regulation of intracellular sterol transport	TRINITY_DN59496_c0_g1
+GO:0032385	0.00631499540581996	0.999986768187943	1	3	positive regulation of intracellular cholesterol transport	BP	0.9999999999	BP positive regulation of intracellular cholesterol transport	TRINITY_DN59496_c0_g1
+GO:0006094	0.00666451483663466	0.999745149974992	2	59	gluconeogenesis	BP	0.9999999999	BP gluconeogenesis	TRINITY_DN23038_c0_g1, TRINITY_DN48678_c0_g1
+GO:0019319	0.00666451483663466	0.999745149974992	2	59	hexose biosynthetic process	BP	0.9999999999	BP hexose biosynthetic process	TRINITY_DN23038_c0_g1, TRINITY_DN48678_c0_g1
+GO:0005996	0.00699293425899212	0.999360592300506	3	196	monosaccharide metabolic process	BP	0.9999999999	BP monosaccharide metabolic process	TRINITY_DN23038_c0_g1, TRINITY_DN45249_c0_g1, TRINITY_DN48678_c0_g1
+GO:0033814	0.00748851826615351	0.999981383657086	1	3	propanoyl-CoA C-acyltransferase activity	MF	0.9999999999	MF propanoyl-CoA C-acyltransferase activity	TRINITY_DN59496_c0_g1
+GO:0001972	0.00760459753074943	0.999980801038084	1	3	retinoic acid binding	MF	0.9999999999	MF retinoic acid binding	TRINITY_DN57776_c0_g1
+GO:0005501	0.00760459753074943	0.999980801038084	1	3	retinoid binding	MF	0.9999999999	MF retinoid binding	TRINITY_DN57776_c0_g1
+GO:0006480	0.00764677255468557	0.999978165204428	1	4	N-terminal protein amino acid methylation	BP	0.9999999999	BP N-terminal protein amino acid methylation	TRINITY_DN14188_c0_g1
+GO:0035115	0.00807228763125302	0.999975663167852	1	4	embryonic forelimb morphogenesis	BP	0.9999999999	BP embryonic forelimb morphogenesis	TRINITY_DN57776_c0_g1
+GO:0019840	0.0084401667921818	0.999973390279842	1	4	isoprenoid binding	MF	0.9999999999	MF isoprenoid binding	TRINITY_DN57776_c0_g1
+GO:0004612	0.00858477636998895	0.999972468951963	1	4	phosphoenolpyruvate carboxykinase (ATP) activity	MF	0.9999999999	MF phosphoenolpyruvate carboxykinase (ATP) activity	TRINITY_DN23038_c0_g1
+GO:0044794	0.00866582967619722	0.999970079749834	1	5	positive regulation by host of viral process	BP	0.9999999999	BP positive regulation by host of viral process	TRINITY_DN48678_c0_g1
+GO:0009819	0.00871246099430113	0.999971642373035	1	4	drought recovery	BP	0.9999999999	BP drought recovery	TRINITY_DN483_c0_g1
+GO:0071073	0.00930001866034454	0.99996768057459	1	4	positive regulation of phospholipid biosynthetic process	BP	0.9999999999	BP positive regulation of phospholipid biosynthetic process	TRINITY_DN48678_c0_g1
+GO:0048670	0.00946280981229749	0.999962828671311	1	6	regulation of collateral sprouting	BP	0.9999999999	BP regulation of collateral sprouting	TRINITY_DN57776_c0_g1
+GO:0044788	0.00960427931571887	0.999961706800263	1	6	modulation by host of viral process	BP	0.9999999999	BP modulation by host of viral process	TRINITY_DN48678_c0_g1
+GO:0047456	0.00977622467609974	0.999964278824512	1	4	2-methylisocitrate dehydratase activity	MF	0.9999999999	MF 2-methylisocitrate dehydratase activity	TRINITY_DN62328_c0_g1
+GO:0048385	0.00993449650859023	0.999959022978692	1	6	regulation of retinoic acid receptor signaling pathway	BP	0.9999999999	BP regulation of retinoic acid receptor signaling pathway	TRINITY_DN57776_c0_g1
+GO:0030326	0.0101039466520947	0.99995761035444	1	6	embryonic limb morphogenesis	BP	0.9999999999	BP embryonic limb morphogenesis	TRINITY_DN57776_c0_g1
+GO:0035113	0.0112638733550054	0.999945794020372	1	7	embryonic appendage morphogenesis	BP	0.9999999999	BP embryonic appendage morphogenesis	TRINITY_DN57776_c0_g1
+GO:0019543	0.0117030440876306	0.999945364117734	1	5	propionate catabolic process	BP	0.9999999999	BP propionate catabolic process	TRINITY_DN62328_c0_g1
+GO:0019629	0.0117030440876306	0.999945364117734	1	5	propionate catabolic process, 2-methylcitrate cycle	BP	0.9999999999	BP propionate catabolic process, 2-methylcitrate cycle	TRINITY_DN62328_c0_g1
+GO:0002138	0.0127308327600798	0.999930716175098	1	7	retinoic acid biosynthetic process	BP	0.9999999999	BP retinoic acid biosynthetic process	TRINITY_DN57776_c0_g1
+GO:0044391	0.0129389815694598	0.998517442167755	3	230	ribosomal subunit	CC	0.9999999999	CC ribosomal subunit	TRINITY_DN49978_c0_g1, TRINITY_DN56439_c0_g1, TRINITY_DN57475_c0_g1
+GO:0018580	0.014267401985752	0.999911124102767	1	8	nitronate monooxygenase activity	MF	0.9999999999	MF nitronate monooxygenase activity	TRINITY_DN54460_c0_g1
+GO:0009374	0.0156662778610313	0.999894962592294	1	7	biotin binding	MF	0.9999999999	MF biotin binding	TRINITY_DN48678_c0_g1
+GO:1903727	0.0157465993596276	0.999891678919062	1	8	positive regulation of phospholipid metabolic process	BP	0.9999999999	BP positive regulation of phospholipid metabolic process	TRINITY_DN48678_c0_g1
+GO:0019541	0.0159106688532698	0.999891649629131	1	7	propionate metabolic process	BP	0.9999999999	BP propionate metabolic process	TRINITY_DN62328_c0_g1
+GO:0035136	0.0164056221663627	0.999880535152733	1	9	forelimb morphogenesis	BP	0.9999999999	BP forelimb morphogenesis	TRINITY_DN57776_c0_g1
+GO:0032373	0.0175796506410009	0.999862764113207	1	9	positive regulation of sterol transport	BP	0.9999999999	BP positive regulation of sterol transport	TRINITY_DN59496_c0_g1
+GO:0032376	0.0175796506410009	0.999862764113207	1	9	positive regulation of cholesterol transport	BP	0.9999999999	BP positive regulation of cholesterol transport	TRINITY_DN59496_c0_g1
+GO:0016703	0.017777144188651	0.999857908008694	1	10	oxidoreductase activity, acting on single donors with incorporation of molecular oxygen, incorporation of one atom of oxygen (internal monooxygenases or internal mixed function oxidases)	MF	0.9999999999	MF oxidoreductase activity, acting on single donors with incorporation of molecular oxygen, incorporation of one atom of oxygen (internal monooxygenases or internal mixed function oxidases)	TRINITY_DN54460_c0_g1
+GO:0032377	0.0179131016592307	0.99985749060562	1	9	regulation of intracellular lipid transport	BP	0.9999999999	BP regulation of intracellular lipid transport	TRINITY_DN59496_c0_g1
+GO:0032380	0.0179131016592307	0.99985749060562	1	9	regulation of intracellular sterol transport	BP	0.9999999999	BP regulation of intracellular sterol transport	TRINITY_DN59496_c0_g1
+GO:0032383	0.0179131016592307	0.99985749060562	1	9	regulation of intracellular cholesterol transport	BP	0.9999999999	BP regulation of intracellular cholesterol transport	TRINITY_DN59496_c0_g1
+GO:0042839	0.0182686536338045	0.999851757292935	1	9	D-glucuronate metabolic process	BP	0.9999999999	BP D-glucuronate metabolic process	TRINITY_DN45249_c0_g1
+GO:0042840	0.0182686536338045	0.999851757292935	1	9	D-glucuronate catabolic process	BP	0.9999999999	BP D-glucuronate catabolic process	TRINITY_DN45249_c0_g1
+GO:0016102	0.0183276402022506	0.999847423220768	1	11	diterpenoid biosynthetic process	BP	0.9999999999	BP diterpenoid biosynthetic process	TRINITY_DN57776_c0_g1
+GO:0042573	0.0187565668478718	0.999841761767571	1	10	retinoic acid metabolic process	BP	0.9999999999	BP retinoic acid metabolic process	TRINITY_DN57776_c0_g1
+GO:0022625	0.0192540590406553	0.998707081715828	2	98	cytosolic large ribosomal subunit	CC	0.9999999999	CC cytosolic large ribosomal subunit	TRINITY_DN56439_c0_g1, TRINITY_DN57475_c0_g1
+GO:0098554	0.0198819514352728	0.999824311567751	1	9	cytoplasmic side of endoplasmic reticulum membrane	CC	0.9999999999	CC cytoplasmic side of endoplasmic reticulum membrane	TRINITY_DN57475_c0_g1
+GO:0098556	0.0198819514352728	0.999824311567751	1	9	cytoplasmic side of rough endoplasmic reticulum membrane	CC	0.9999999999	CC cytoplasmic side of rough endoplasmic reticulum membrane	TRINITY_DN57475_c0_g1
+GO:0004611	0.020235701024421	0.999815718501897	1	10	phosphoenolpyruvate carboxykinase activity	MF	0.9999999999	MF phosphoenolpyruvate carboxykinase activity	TRINITY_DN23038_c0_g1
+GO:1902188	0.0205312455329775	0.999808370994875	1	11	positive regulation of viral release from host cell	BP	0.9999999999	BP positive regulation of viral release from host cell	TRINITY_DN48678_c0_g1
+GO:0006006	0.0205689242866905	0.998567761008661	2	108	glucose metabolic process	BP	0.9999999999	BP glucose metabolic process	TRINITY_DN23038_c0_g1, TRINITY_DN48678_c0_g1
+GO:0072329	0.0212171209243786	0.998496622115122	2	117	monocarboxylic acid catabolic process	BP	0.9999999999	BP monocarboxylic acid catabolic process	TRINITY_DN45249_c0_g1, TRINITY_DN62328_c0_g1
+GO:0006063	0.0216406371920117	0.999787014604914	1	11	uronic acid metabolic process	BP	0.9999999999	BP uronic acid metabolic process	TRINITY_DN45249_c0_g1
+GO:0006064	0.0216406371920117	0.999787014604914	1	11	glucuronate catabolic process	BP	0.9999999999	BP glucuronate catabolic process	TRINITY_DN45249_c0_g1
+GO:0019585	0.0216406371920117	0.999787014604914	1	11	glucuronate metabolic process	BP	0.9999999999	BP glucuronate metabolic process	TRINITY_DN45249_c0_g1
+GO:0004519	0.0218820635000037	0.998423471942337	2	120	endonuclease activity	MF	0.9999999999	MF endonuclease activity	TRINITY_DN20636_c0_g1, TRINITY_DN48418_c0_g2
+GO:0071071	0.02197421113598	0.999778552995069	1	12	regulation of phospholipid biosynthetic process	BP	0.9999999999	BP regulation of phospholipid biosynthetic process	TRINITY_DN48678_c0_g1
+GO:0003994	0.0223240870019914	0.999775543274173	1	10	aconitate hydratase activity	MF	0.9999999999	MF aconitate hydratase activity	TRINITY_DN62328_c0_g1
+GO:1902186	0.0229649795247168	0.999758045154943	1	12	regulation of viral release from host cell	BP	0.9999999999	BP regulation of viral release from host cell	TRINITY_DN48678_c0_g1
+GO:0006107	0.0247427917967651	0.99971699884532	1	13	oxaloacetate metabolic process	BP	0.9999999999	BP oxaloacetate metabolic process	TRINITY_DN48678_c0_g1
+GO:0009877	0.0250776451381671	0.999706046404351	1	15	nodulation	BP	0.9999999999	BP nodulation	TRINITY_DN47747_c0_g1
+GO:0035108	0.025364481466313	0.999700774227974	1	14	limb morphogenesis	BP	0.9999999999	BP limb morphogenesis	TRINITY_DN57776_c0_g1
+GO:0019626	0.0255615971172627	0.999699948827234	1	12	short-chain fatty acid catabolic process	BP	0.9999999999	BP short-chain fatty acid catabolic process	TRINITY_DN62328_c0_g1
+GO:0031406	0.0257969007975636	0.997968424797798	2	138	carboxylic acid binding	MF	0.9999999999	MF carboxylic acid binding	TRINITY_DN48678_c0_g1, TRINITY_DN57776_c0_g1
+GO:0043177	0.0257969007975636	0.997968424797798	2	138	organic acid binding	MF	0.9999999999	MF organic acid binding	TRINITY_DN48678_c0_g1, TRINITY_DN57776_c0_g1
+GO:0008544	0.0264309655145385	0.999679088522087	1	12	epidermis development	BP	0.9999999999	BP epidermis development	TRINITY_DN57776_c0_g1
+GO:0016688	0.0274005282685557	0.999650546930907	1	14	L-ascorbate peroxidase activity	MF	0.9999999999	MF L-ascorbate peroxidase activity	TRINITY_DN56893_c0_g1
+GO:0015934	0.0281891088691582	0.997674769349041	2	126	large ribosomal subunit	CC	0.9999999999	CC large ribosomal subunit	TRINITY_DN56439_c0_g1, TRINITY_DN57475_c0_g1
+GO:0032787	0.0303774750925407	0.993380162372401	4	601	monocarboxylic acid metabolic process	BP	0.9999999999	BP monocarboxylic acid metabolic process	TRINITY_DN45249_c0_g1, TRINITY_DN48678_c0_g1, TRINITY_DN57776_c0_g1, TRINITY_DN62328_c0_g1
+GO:0003735	0.0303989545711038	0.995191531785045	3	306	structural constituent of ribosome	MF	0.9999999999	MF structural constituent of ribosome	TRINITY_DN49978_c0_g1, TRINITY_DN56439_c0_g1, TRINITY_DN57475_c0_g1
+GO:0050772	0.0314999912924718	0.999535115757223	1	15	positive regulation of axonogenesis	BP	0.9999999999	BP positive regulation of axonogenesis	TRINITY_DN57776_c0_g1
+GO:0032370	0.0317449376760363	0.999525728745158	1	16	positive regulation of lipid transport	BP	0.9999999999	BP positive regulation of lipid transport	TRINITY_DN59496_c0_g1
+GO:0032371	0.0317917216543478	0.999524321688778	1	16	regulation of sterol transport	BP	0.9999999999	BP regulation of sterol transport	TRINITY_DN59496_c0_g1
+GO:0032374	0.0317917216543478	0.999524321688778	1	16	regulation of cholesterol transport	BP	0.9999999999	BP regulation of cholesterol transport	TRINITY_DN59496_c0_g1
+GO:0019318	0.0319661034813817	0.997176111310024	2	141	hexose metabolic process	BP	0.9999999999	BP hexose metabolic process	TRINITY_DN23038_c0_g1, TRINITY_DN48678_c0_g1
+GO:0044445	0.0321311905652794	0.994805538080648	3	337	cytosolic part	CC	0.9999999999	CC cytosolic part	TRINITY_DN49978_c0_g1, TRINITY_DN56439_c0_g1, TRINITY_DN57475_c0_g1
+GO:0110095	0.0346869842845709	0.999427237848763	1	19	cellular detoxification of aldehyde	BP	0.9999999999	BP cellular detoxification of aldehyde	TRINITY_DN45249_c0_g1
+GO:0006278	0.0352995979382155	0.999408506644652	1	18	RNA-dependent DNA biosynthetic process	BP	0.9999999999	BP RNA-dependent DNA biosynthetic process	TRINITY_DN48418_c0_g2
+GO:0016408	0.0358102013227189	0.999387618372944	1	20	C-acyltransferase activity	MF	0.9999999999	MF C-acyltransferase activity	TRINITY_DN59496_c0_g1
+GO:0051702	0.0368276696674856	0.999352086770822	1	20	interaction with symbiont	BP	0.9999999999	BP interaction with symbiont	TRINITY_DN48678_c0_g1
+GO:0051851	0.0368276696674856	0.999352086770822	1	20	modification by host of symbiont morphology or physiology	BP	0.9999999999	BP modification by host of symbiont morphology or physiology	TRINITY_DN48678_c0_g1
+GO:0046459	0.0372074991212894	0.999342383904402	1	18	short-chain fatty acid metabolic process	BP	0.9999999999	BP short-chain fatty acid metabolic process	TRINITY_DN62328_c0_g1
+GO:1901576	0.037485110727579	0.984676358897226	9	2290	organic substance biosynthetic process	BP	0.9999999999	BP organic substance biosynthetic process	TRINITY_DN23038_c0_g1, TRINITY_DN45249_c0_g1, TRINITY_DN48418_c0_g2, TRINITY_DN48678_c0_g1, TRINITY_DN49978_c0_g1, TRINITY_DN56439_c0_g1, TRINITY_DN57475_c0_g1, TRINITY_DN57776_c0_g1, TRINITY_DN59496_c0_g1
+GO:0006412	0.0376481229009804	0.993529182332996	3	341	translation	BP	0.9999999999	BP translation	TRINITY_DN49978_c0_g1, TRINITY_DN56439_c0_g1, TRINITY_DN57475_c0_g1
+GO:0004190	0.0377212735914577	0.99931835973307	1	21	aspartic-type endopeptidase activity	MF	0.9999999999	MF aspartic-type endopeptidase activity	TRINITY_DN57912_c0_g1
+GO:0070001	0.0377212735914577	0.99931835973307	1	21	aspartic-type peptidase activity	MF	0.9999999999	MF aspartic-type peptidase activity	TRINITY_DN57912_c0_g1
+GO:0016885	0.0386147427336489	0.999287219998558	1	20	ligase activity, forming carbon-carbon bonds	MF	0.9999999999	MF ligase activity, forming carbon-carbon bonds	TRINITY_DN48678_c0_g1
+GO:0004032	0.0398786195320107	0.999234295960884	1	23	alditol:NADP+ 1-oxidoreductase activity	MF	0.9999999999	MF alditol:NADP+ 1-oxidoreductase activity	TRINITY_DN45249_c0_g1
+GO:0044283	0.0408984208644522	0.990223325872881	4	652	small molecule biosynthetic process	BP	0.9999999999	BP small molecule biosynthetic process	TRINITY_DN23038_c0_g1, TRINITY_DN45249_c0_g1, TRINITY_DN48678_c0_g1, TRINITY_DN57776_c0_g1
+GO:0043043	0.0434646337718621	0.992096710026158	3	363	peptide biosynthetic process	BP	0.9999999999	BP peptide biosynthetic process	TRINITY_DN49978_c0_g1, TRINITY_DN56439_c0_g1, TRINITY_DN57475_c0_g1
+GO:0046889	0.0437235274221736	0.999082183144405	1	21	positive regulation of lipid biosynthetic process	BP	0.9999999999	BP positive regulation of lipid biosynthetic process	TRINITY_DN48678_c0_g1
+GO:1905954	0.0437653023593299	0.999076473623341	1	23	positive regulation of lipid localization	BP	0.9999999999	BP positive regulation of lipid localization	TRINITY_DN59496_c0_g1
+GO:0004724	0.0450597534186728	0.999017068508397	1	25	magnesium-dependent protein serine/threonine phosphatase activity	MF	0.9999999999	MF magnesium-dependent protein serine/threonine phosphatase activity	TRINITY_DN483_c0_g1
+GO:1903725	0.0493562043408631	0.998813670539007	1	28	regulation of phospholipid metabolic process	BP	0.9999999999	BP regulation of phospholipid metabolic process	TRINITY_DN48678_c0_g1
+GO:0016459	0.0495028238676219	0.998809893420459	1	26	myosin complex	CC	0.9999999999	CC myosin complex	TRINITY_DN9915_c0_g1
+GO:0032368	0.0495985268932705	0.998807126469455	1	25	regulation of lipid transport	BP	0.9999999999	BP regulation of lipid transport	TRINITY_DN59496_c0_g1
+GO:0009058	0.0496031706093729	0.978661415354584	9	2419	biosynthetic process	BP	0.9999999999	BP biosynthetic process	TRINITY_DN23038_c0_g1, TRINITY_DN45249_c0_g1, TRINITY_DN48418_c0_g2, TRINITY_DN48678_c0_g1, TRINITY_DN49978_c0_g1, TRINITY_DN56439_c0_g1, TRINITY_DN57475_c0_g1, TRINITY_DN57776_c0_g1, TRINITY_DN59496_c0_g1
+GO:0010770	0.0496270616962505	0.998805741201868	1	25	positive regulation of cell morphogenesis involved in differentiation	BP	0.9999999999	BP positive regulation of cell morphogenesis involved in differentiation	TRINITY_DN57776_c0_g1
+GO:0046185	0.0499618100904807	0.99878575452777	1	27	aldehyde catabolic process	BP	0.9999999999	BP aldehyde catabolic process	TRINITY_DN45249_c0_g1
